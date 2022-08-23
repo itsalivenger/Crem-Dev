@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles/index.css" rel="stylesheet" />
+    <link href="./styles/switch.css" rel="stylesheet" />
+    <link href="./fonts/BebasNeue-Regular.ttf" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik+Dirt&display=swap" rel="stylesheet">
+    <link href="./styles/button.css" rel="stylesheet" />
+    <link href="./styles/hiddenMenu.css" rel="stylesheet" />
+    <title>title</title>
+</head>
+<body>
+    <nav id="navbar">
+
+        <div class="logo">
+            <a href="#" id="logoText">Crem</a>
+        </div>
+        <div class="liens">
+            <a class="linksContainers">
+                <div class="linksInNav" href="#">Home</div>
+            </a>
+
+            <a class="linksContainers">
+                <div class="linksInNav" href="#">Service</div>
+            </a>
+            
+            <a class="linksContainers">
+                <div class="linksInNav" href="#">Blog</div>
+            </a>
+
+            <a class="linksContainers">
+                <div class="linksInNav" href="#">Contact</div>
+            </a>
+
+            <a class="linksContainers">
+                <div class="linksInNav" href="#">About us</div>
+            </a>
+        </div>
+        <div class="lightSwitch">
+            <!-- Rounded switch -->
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+
+
+        <div onclick="toggle()" class="button-container">
+            <span class="mask">
+                <div class="box-in-menu-btn white"></div>
+                <div class="box-in-menu-btn white"></div>
+                <div class="box-in-menu-btn white"></div>
+            </span>
+            <button type="button" name="Hover">
+                <div class="box-in-menu-btn black"></div>
+                <div class="box-in-menu-btn black"></div>
+                <div class="box-in-menu-btn black"></div>
+            </button>
+        </div>
+
+        <div class="toggle-Menu">
+            <div class="" style="margin-left: 50px;">
+                <a class="">Home</a>
+            </div>
+            <div class="" style="margin-left: 20px;">
+                <a class="">Services</a>
+            </div>
+            <div class="" style="margin-left: 1em;">
+                <a class="">Blog</a>
+            </div>
+            <div class="" style="margin-left: 20px;">
+                <a class="">Contact</a>
+            </div>
+            <div class="" style="margin-left: 50px;">
+                <a class="">About us</a>
+            </div>
+            <div onclick="toggle()" class="closeBtn">X</div>
+        </div>
+
+    </nav>
+    <script src="./index.js"></script>
+</body>
+</html>

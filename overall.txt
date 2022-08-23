@@ -1,0 +1,15 @@
+colors: #000000 
+
+header => {
+	-light switch (dark mode) rotated 60°.
+	-text: Home/Service/Blog/Contact/About us/recount(ch7al mn project done)/quote/latest work/our team/testimonials/our clients/blog/tariff plan
+	-logo
+	-media query: side menu when you click a rectangle (that has 4 other rectangles inside it)
+}
+
+home =>{
+	-image
+	-big text (h1) with a smaller text (h5) and a button
+	-background black mostly
+}
+
