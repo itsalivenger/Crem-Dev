@@ -24,7 +24,7 @@
     }
     
     .toggle{
-        top: 5px;
+        top: -10px;
     }
     
     .closeBtn{
@@ -38,6 +38,6 @@
 
 @media only screen and (max-width: 380px) {
     .toggle-Menu{
-        left: 60%;
+        left: 65%;
     }
 }
