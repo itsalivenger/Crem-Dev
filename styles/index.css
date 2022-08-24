@@ -77,7 +77,7 @@ body{
 }
 
 @media only screen and (max-width: 650px) {
-  .liens, .lightSwitch{
+  .liens{
     display: none;
   }
 
