@@ -1,0 +1,53 @@
+.firstSection{
+    background-image: url('../images/firstBackground.jpg');
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    display: flex;
+    padding: 4em;
+    align-items: center;
+    color: white;
+    height: 80vh;
+}
+
+.homeContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2em;
+    width: 50%;
+}
+
+.firstSectionBtn{
+    width: 40%;
+    color: white!important;
+    background-color: #2195f394!important;
+    transition: all .4s!important;
+}
+
+.firstSectionBtn:hover{
+    background-color: #2195f3c4!important;
+}
+
+.homeText{
+    font-weight: 600;
+}
+
+
+@media only screen and (max-width: 1000px){
+    .homeContent{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .firstSection{
+        padding: 2em;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    .firstSection{
+        padding: 1em;
+    }
+}
