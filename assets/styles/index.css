@@ -1,3 +1,12 @@
+a{
+    text-decoration: none!important;
+    color: white;
+}
+
+body{
+    margin: 0;
+}
+
 .titles{
     display: flex;
     justify-content: space-around;
@@ -6,7 +15,8 @@
 
 .titles > hr{
     width: 30%;
-    color: black;
+    color: #2195f3;
+    border: 1px solid #2195f3;
 }
 
 .iconsInWhatWeDo{

@@ -1,8 +1,67 @@
 .thirdSection{
-    padding: 2em;
+    padding: 3em;
+    margin: 6em 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1fr, 250px));
+    color: white;
+    background-color: black;
+}
+
+.ourServicesTitle{
+    color: white;
 }
 
 .whatWeDoContentContainer{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(1fr, 250px));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+}
+
+.services{
+    display: flex;
+    flex-direction: column;
+    width: 31%;
+    border-radius: 20px;
+    border: 1px solid white;
+    gap: 4em;
+    padding: 1em;
+    text-align: center;
+}
+
+.iconsInServices{
+    position: relative;
+    top: -30px;
+    left: 40%;
+    color: black;
+    border-radius: 20px;
+    background-color: white;
+    padding: 1em 0;
+    width: 20%;
+}
+
+.titles{
+    margin-bottom: 5em;
+}
+
+@media only screen and (max-width: 1030px) {
+    .services{
+        width: 40%;
+    }
+
+    .thirdSection{
+        padding: 1em;
+    }
+
+    .whatWeDoContentContainer{
+        justify-content: space-evenly;
+        gap: 1em;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .services{
+        width: 100%;
+        gap: 0;
+    }
 }
