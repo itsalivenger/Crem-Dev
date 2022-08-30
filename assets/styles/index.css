@@ -1,95 +1,26 @@
-a{
-    text-decoration: none!important;
-    color: white;
-}
-
-body{
-    margin: 0;
-}
-
-#navbar{
+.titles{
     display: flex;
-    justify-content: space-between;
-    background-color: #111;
+    justify-content: space-around;
     align-items: center;
-    padding: 1.5em .5em;
-    position: fixed;
-    width: 100%;
-    top: 0;
 }
 
-.liens{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 70%;
+.titles > hr{
+    width: 30%;
+    color: black;
 }
 
-.linksContainers{
-  transition: padding .2s;
-  cursor: pointer;
+.iconsInWhatWeDo{
+    font-size: 20px!important;
+    position: relative;
+    top: -40px;
+    background: white;
+    border-radius: 10px;
+    color: black;
+    padding: 0 1em .5em 1em;
 }
 
-.linksContainers:hover{
-  padding-bottom: 1em;
-  border-bottom: #2196F3 1px solid;
-}
-
-.mobile-menu-btn{
-  display: none;
-  height: 40px;
-  width: 40px;
-  border: solid white .5px;
-}
-
-.box-in-menu-btn{
-  margin: 15% 0;
-  width: 40px;
-}
-
-.white{
-  border: solid white .5px;
-}
-
-.black{
-  border: solid black .5px;
-}
-
-.lightSwitch{
-  display: flex;
-  align-items: center;
-}
-
-.linksInNav{
-    color: white;
-}
-
-.linksInNav:hover{
-    color: #2196F3;
-}
-
-#logoText{
-  color: white;
-  margin: 0;
-  font-family: 'Bebas Neue', cursive;
-  font-size: 3em;
-  transition: color .6s;
-}
-
-#logoText:hover{
-  color: rgb(78, 172, 255);
-}
-
-@media only screen and (max-width: 650px) {
-  .liens{
-    display: none;
-  }
-
-  .mobile-menu-btn{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    transition: transform 1s;
-  }
-  
+@media only screen and (max-width: 550px) {
+    .titles > hr{
+        width: 20%;
+    }
 }

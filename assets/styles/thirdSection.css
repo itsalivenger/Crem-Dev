@@ -1,0 +1,8 @@
+.thirdSection{
+    padding: 2em;
+}
+
+.whatWeDoContentContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(1fr, 250px));
+}
