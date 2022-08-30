@@ -13,6 +13,9 @@ body{
     background-color: #111;
     align-items: center;
     padding: 1.5em .5em;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 .liens{
