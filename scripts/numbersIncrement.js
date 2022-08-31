@@ -7,7 +7,6 @@ for (let i = 0; i < numbers.length; i++) {
 
 function increment(elem, i) {
     let timeout = setTimeout(()=>{
-        console.log(time)
         elem.innerText = parseInt(elem.innerText) + 1;
         if(parseInt(elem.innerText) >= values[i] * .75){
             time += time > 600 ? -time / 2 : time * 6 / 5;

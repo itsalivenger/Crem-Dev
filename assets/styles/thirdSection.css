@@ -59,9 +59,18 @@
     }
 }
 
-@media only screen and (max-width: 880px) {
-    .services{
+@media only screen and (max-width: 768px) {
+    .whatWeDoContentContainer{
+        flex-wrap: nowrap;
+        width: fit-content;
+    }
+
+    #horizontalScroll{
         width: 100%;
-        gap: 0;
+        overflow-x: scroll;
+    }
+
+    .services{
+        width: 500px;
     }
 }
