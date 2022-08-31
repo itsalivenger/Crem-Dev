@@ -3,6 +3,10 @@ a{
     color: white;
 }
 
+#horizontalScroll{
+    touch-action: none;
+}
+
 body{
     margin: 0;
 }

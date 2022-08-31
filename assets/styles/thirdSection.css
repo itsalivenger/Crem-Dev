@@ -5,6 +5,7 @@
     grid-template-columns: repeat(auto-fit, minmax(1fr, 250px));
     color: white;
     background-color: black;
+    transition: all .4s;
 }
 
 .ourServicesTitle{
