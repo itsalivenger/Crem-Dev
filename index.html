@@ -17,6 +17,7 @@
     <link href="./assets/styles/firstSection.css" rel="stylesheet" />
     <link href="./assets/styles/secondSection.css" rel="stylesheet" />
     <link href="./assets/styles/thirdSection.css" rel="stylesheet" />
+    <link href="./assets/styles/flipCards.css" rel="stylesheet" />
     <!-- Bootstrap CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
@@ -135,102 +136,119 @@
         </div>
     </section>
 
-    <section id="ourServices" data--60-top="position:static;margin-top:20%"
-    data-bottom="position:sticky;top: 20%;margin-top:0%"
-    class="thirdSection reveal fade-bottom" >
+    <section class="thirdSection reveal fade-bottom" >
         <div class="titles">
             <hr />
             <h2 class="ourServicesTitle">Our Services</h2>
             <hr />
         </div>
         <div id="horizontalScroll">
-            <div class="whatWeDoContentContainer"
-            data-center="transform:translateX(-85%)" data-bottom="transform:translateX(0%)">
+            <div class="whatWeDoContentContainer">
                 <div class="services">
-                    <div>
-                        <i class="fa fa-laptop iconsInServices"></i>
-                        <h3>Website</h3>
+                    <div id="websitesBg" class="backgrounds"></div>
+                    <div class="serviceContent">
+                        <div>
+                            <i class="fa fa-laptop iconsInServices"></i>
+                            <h3>Website</h3>
+                        </div>
+                        <p class="serviceContentTextUntoggled">
+                            Here at Crem Dev our team make sure to deliver best quality websites out there in the internet.
+                            With any desirable feature to be implemented into your website, we make sure to only deliver the best results. 
+                        </p>
                     </div>
-                    <p>
-                        Here at Crem Dev our team make sure to deliver best quality websites out there in the internet.
-                        With any desirable feature to be implemented into your website, we make sure to only deliver the best results. 
-                    </p>
                 </div>
 
                 
                 <div class="services">
-                    <div>
-                        <i class="fa fa-mobile-phone iconsInServices"></i>
-                        <h3>Mobile Apps</h3>
+                    <div id="responsiveBg" class="backgrounds"></div>
+                    <div class="serviceContent">
+                        <div>
+                            <i class="fa fa-arrows iconsInServices"></i>
+                            <h3>Fully Responsive</h3>
+                        </div>
+                        <p class="serviceContentTextUntoggled">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Quo suscipit esse accusamus neque labore culpa eveniet
+                            nesciunt dolorem saepe? Aperiam iste voluptate deleniti
+                            blanditiis perspiciatis ea, nesciunt quasi reiciendis omnis.
+                        </p>
                     </div>
-                    <p>
-                        Our team doesn't only consists on websites, we also Do Mobile apps and yes, just like websites,
-                        we can scale our products.
-                    </p>
+                </div>
+
+
+                
+                <div class="services">
+                    <div id="mobilePhoneBg" class="backgrounds"></div>
+                    <div class="serviceContent">
+                        <div>
+                            <i class="fa fa-mobile-phone iconsInServices"></i>
+                            <h3>Mobile Apps</h3>
+                        </div>
+                        <p class="serviceContentTextUntoggled">
+                            Our team doesn't only consists on websites, we also Do Mobile apps and yes, just like websites,
+                            we can scale our products.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="services">
+                    <div id="webMarketing" class="backgrounds"></div>
+                    <div class="serviceContent">
+                        <div>
+                            <i class="fa fa-bullseye iconsInServices"></i>
+                            <h3>Web Marketing</h3>
+                        </div>
+                        <p class="serviceContentTextUntoggled">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Quo suscipit esse accusamus neque labore culpa eveniet
+                            nesciunt dolorem saepe? Aperiam iste voluptate deleniti
+                            blanditiis perspiciatis ea, nesciunt quasi reiciendis omnis.
+                        </p>
+                    </div>
                 </div>
 
                 
                 <div class="services">
-                    <div>
-                        <i class="fa fa-arrows iconsInServices"></i>
-                        <h3>Fully Responsive</h3>
+                    <div id="maintenance" class="backgrounds"></div>
+                    <div class="serviceContent">
+                        <div>
+                            <i class="fa fa-bullhorn iconsInServices"></i>
+                            <h3>Website Maintenance</h3>
+                        </div>
+                        <p class="serviceContentTextUntoggled">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Quo suscipit esse accusamus neque labore culpa eveniet
+                            nesciunt dolorem saepe? Aperiam iste voluptate deleniti
+                            blanditiis perspiciatis ea, nesciunt quasi reiciendis omnis.
+                        </p>
                     </div>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quo suscipit esse accusamus neque labore culpa eveniet
-                        nesciunt dolorem saepe? Aperiam iste voluptate deleniti
-                        blanditiis perspiciatis ea, nesciunt quasi reiciendis omnis.
-                    </p>
                 </div>
 
                 
                 <div class="services">
-                    <div>
-                        <i class="fa fa-bullhorn iconsInServices"></i>
-                        <h3>Web Marketing</h3>
+                    <div id="pricing" class="backgrounds"></div>
+                    <div class="serviceContent">
+                        <div>
+                            <i class="fa fa-money iconsInServices"></i>
+                            <h3>Reasonable Pricing</h3>
+                        </div>
+                        <p class="serviceContentTextUntoggled">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Quo suscipit esse accusamus neque labore culpa eveniet
+                            nesciunt dolorem saepe? Aperiam iste voluptate deleniti
+                            blanditiis perspiciatis ea, nesciunt quasi reiciendis omnis.
+                        </p>
                     </div>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quo suscipit esse accusamus neque labore culpa eveniet
-                        nesciunt dolorem saepe? Aperiam iste voluptate deleniti
-                        blanditiis perspiciatis ea, nesciunt quasi reiciendis omnis.
-                    </p>
-                </div>
-
-                
-                <div class="services">
-                    <div>
-                        <i class="fa fa-money iconsInServices"></i>
-                        <h3>Reasonable Pricing</h3>
-                    </div>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quo suscipit esse accusamus neque labore culpa eveniet
-                        nesciunt dolorem saepe? Aperiam iste voluptate deleniti
-                        blanditiis perspiciatis ea, nesciunt quasi reiciendis omnis.
-                    </p>
-                </div>
-
-                
-                <div class="services">
-                    <div>
-                        <i class="fa fa-bullseye iconsInServices"></i>
-                        <h3>Website Maintenance</h3>
-                    </div>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quo suscipit esse accusamus neque labore culpa eveniet
-                        nesciunt dolorem saepe? Aperiam iste voluptate deleniti
-                        blanditiis perspiciatis ea, nesciunt quasi reiciendis omnis.
-                    </p>
                 </div>
             </div>
+
         </div>
     </section>
     <script src="./scripts/navMenuToggle.js"></script>
     <script src="./scripts/numbersIncrement.js"></script>
     <script src="./scripts/smoothScrolling.js"></script>
-    <script src="./scripts/horizontalScrol.js"></script>
+    <script src="./scripts/contentToggling.js"></script>
     <!-- ScrollR -->
     <script type="text/javascript" src="./scripts/skrollr.js"></script>
 	<script type="text/javascript">

@@ -20,29 +20,79 @@
 }
 
 .services{
-    display: flex;
-    flex-direction: column;
     width: 31%;
     border-radius: 20px;
     border: 1px solid white;
-    gap: 4em;
-    padding: 1em;
+    padding: 1em 1em .5em 1em;
     text-align: center;
+    overflow: hidden;
+    position: relative;
 }
 
-.iconsInServices{
+.backgrounds{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .3s;
+}
+
+.serviceContent{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
     position: relative;
-    top: -30px;
-    left: 40%;
-    color: black;
+    top: 70%;
+    transition: top .6s;
+}
+
+.serviceContentTextUntoggled{
+    opacity: 0;
+    transition: opacity 1.5s;
+    padding: .7em;
     border-radius: 20px;
-    background-color: white;
-    padding: 1em 0;
-    width: 20%;
+}
+
+.serviceContentTextToggled{
+    opacity: 1;
+}
+
+.toggleContent{
+    top: 0;
 }
 
 .titles{
     margin-bottom: 5em;
+}
+
+#websitesBg{
+    background-image: url('../images/websiteBgS.jpg');
+}
+
+#mobilePhoneBg{
+    background-image: url('../images/mobilePhoneS.jpg');
+}
+
+
+#responsiveBg{
+    background-image: url('../images/responsiveBgS.jpg');
+}
+
+#webMarketing{
+    background-image: url('../images/webMarketingBgS.jpg');
+}
+
+#pricing{
+    background-image: url('../images/pricingBgS.jpg');
+}
+
+#maintenance{
+    background-image: url('../images/maintenanceBgS.jpg');
 }
 
 @media only screen and (max-width: 1030px) {
