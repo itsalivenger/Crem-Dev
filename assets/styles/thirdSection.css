@@ -1,6 +1,6 @@
 .thirdSection{
-    padding: 3em;
-    margin: 6em 0 0 0;
+    padding: 1.5em;
+    margin: 3em 0 0 0;
     color: white;
     background-color: black;
     transition: all .4s;
@@ -20,7 +20,7 @@
 }
 
 .services{
-    width: 31%;
+    width: 25%;
     border-radius: 20px;
     border: 1px solid white;
     padding: 1em 1em .5em 1em;
@@ -55,7 +55,7 @@
 .serviceContentTextUntoggled{
     opacity: 0;
     transition: opacity 1.5s;
-    padding: .7em;
+    padding: .2em;
     border-radius: 20px;
 }
 
@@ -93,7 +93,7 @@
 }
 
 .titles{
-    margin-bottom: 3em;
+    margin-bottom: .5em;
 }
 
 #websitesBg{
@@ -127,7 +127,7 @@
     }
 
     .thirdSection{
-        padding: 1em;
+        padding: 2em 0;
     }
 
     .whatWeDoContentContainer{
@@ -144,7 +144,7 @@
 
     #horizontalScroll{
         width: 100%;
-        overflow-x: scroll;
+        overflow-x: hidden;
     }
 
     .services{
