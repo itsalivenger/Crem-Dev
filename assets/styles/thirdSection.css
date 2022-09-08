@@ -78,24 +78,24 @@
 .scrollLabel{
     text-align: center;
     margin: 1em;
+    display: none;
 }
 
 .arrows{
     position: sticky;
-    /* display: none; */
+    display: none;
     color: black;
     font-size: 3em;
     font-weight: bolder;
     top: 70%;
     z-index: 2;
-    display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
 }
 
 .titles{
-    margin-bottom: 5em;
+    margin-bottom: 3em;
 }
 
 #websitesBg{
@@ -156,5 +156,13 @@
     .toggleBtn{
         display: inline-block!important;
         width: 50%;
+    }
+    
+    .scrollLabel{
+        display: block;
+    }
+
+    .arrows{
+        display: flex;
     }
 }
