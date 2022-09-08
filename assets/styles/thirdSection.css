@@ -1,8 +1,6 @@
 .thirdSection{
     padding: 3em;
     margin: 6em 0 0 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(1fr, 250px));
     color: white;
     background-color: black;
     transition: all .4s;
@@ -82,16 +80,16 @@
 }
 
 .arrows{
-    position: sticky;
+    position: absolute;
     display: none;
     color: black;
     font-size: 3em;
     font-weight: bolder;
-    top: 70%;
+    top: 55%;
     z-index: 2;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 90%;
 }
 
 .titles{
@@ -151,6 +149,7 @@
 
     .services{
         width: 80vw;
+        height: 30vh;
     }
 
     .toggleBtn{
