@@ -6,6 +6,7 @@
     color: white;
     background-color: black;
     transition: all .4s;
+    position: relative;
 }
 
 .ourServicesTitle{
@@ -79,6 +80,20 @@
     margin: 1em;
 }
 
+.arrows{
+    position: sticky;
+    /* display: none; */
+    color: black;
+    font-size: 3em;
+    font-weight: bolder;
+    top: 70%;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
 .titles{
     margin-bottom: 5em;
 }
@@ -135,7 +150,7 @@
     }
 
     .services{
-        width: 500px;
+        width: 80vw;
     }
 
     .toggleBtn{

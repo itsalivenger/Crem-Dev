@@ -1,5 +1,7 @@
 const services = document.querySelectorAll('.services');
 const servicesContainer = document.querySelector('.whatWeDoContentContainer');
+const scrollLabel = document.querySelector('.scrollLabel');
+var currentService = 0;
 let toggler = false;
 
 for (let i = 0; i < services.length; i++) {
@@ -17,11 +19,18 @@ const toggleContent = (ele)=>{
     toggler = !toggler;
 }
 
+function navigate(dir) {
+    if(dir + currentService < 0){
+        document.querySelector('.leftArr').style.visibility = 'hidden';
+        return;
+    }else if(dir + currentService > services.length - 1){
+        document.querySelector('.rightArr').style.visibility = 'hidden';
+        return;
+    }
+    document.querySelector('.rightArr').style.visibility = 'visible';
+    document.querySelector('.leftArr').style.visibility = 'visible';
 
-
-
-
-
-servicesContainer.addEventListener('touchmove', (eve)=>{
-    console.log(eve)
-})
+    currentService += dir;
+    scrollLabel.innerHTML = `<h3>${currentService + 1} / 6</h3>`;
+    services[currentService].scrollIntoView({behavior: "smooth"});
+}
