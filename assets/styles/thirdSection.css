@@ -17,6 +17,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 2em;
+    overflow: auto;
 }
 
 .services{
@@ -47,8 +48,9 @@
     flex-direction: column;
     gap: 1em;
     position: relative;
-    top: 70%;
+    top: 60%;
     transition: top .6s;
+    align-items: center;
 }
 
 .serviceContentTextUntoggled{
@@ -58,12 +60,23 @@
     border-radius: 20px;
 }
 
+.toggleBtn{
+    background-color: #2195f3cb!important;
+    display: none!important;
+    color: white!important;
+}
+
 .serviceContentTextToggled{
     opacity: 1;
 }
 
 .toggleContent{
     top: 0;
+}
+
+.scrollLabel{
+    text-align: center;
+    margin: 1em;
 }
 
 .titles{
@@ -123,5 +136,10 @@
 
     .services{
         width: 500px;
+    }
+
+    .toggleBtn{
+        display: inline-block!important;
+        width: 50%;
     }
 }

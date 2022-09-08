@@ -1,4 +1,5 @@
 const services = document.querySelectorAll('.services');
+const servicesContainer = document.querySelector('.whatWeDoContentContainer');
 let toggler = false;
 
 for (let i = 0; i < services.length; i++) {
@@ -15,3 +16,27 @@ const toggleContent = (ele)=>{
     textInServices.className = toggler ? 'serviceContentTextUntoggled' : 'serviceContentTextUntoggled serviceContentTextToggled'
     toggler = !toggler;
 }
+
+
+
+
+
+
+servicesContainer.addEventListener('scroll', (eve)=>{
+    console.log(eve)
+})
+var scrollLeft, scrollTop;
+servicesContainer.addEventListener('scroll', function (event) {
+    alert('scrolled')
+    if (scrollLeft !== element.scrollLeft) {
+        // horizontally scrolled
+
+        scrollLeft = element.scrollLeft;
+    }
+
+    if (scrollTop !== element.scrollTop) {
+        // vertically scrolled
+
+        scrollTop = element.scrollTop;
+    }
+});
