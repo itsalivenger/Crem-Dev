@@ -1,3 +1,8 @@
+*{
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Rubik Dirt', cursive;
+}
+
 a{
     text-decoration: none!important;
     color: white;
@@ -19,6 +24,7 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 100%;
 }
 
 .titles > hr{
@@ -29,8 +35,8 @@ body{
 
 .iconsInWhatWeDo{
     font-size: 20px!important;
-    position: relative;
-    top: -40px;
+    position: absolute;
+    top: -10px;
     background: white;
     border-radius: 10px;
     color: black;

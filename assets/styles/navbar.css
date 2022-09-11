@@ -3,7 +3,7 @@
     justify-content: space-between;
     background-color: #111;
     align-items: center;
-    padding: 1.5em .5em;
+    padding: .5em 2em;
     position: fixed;
     width: 100%;
     top: 0;
@@ -56,15 +56,12 @@
     color: white;
 }
 
-.linksInNav:hover{
-    color: #2196F3;
-}
 
 #logoText{
   color: white;
   margin: 0;
   font-family: 'Bebas Neue', cursive;
-  font-size: 3em;
+  font-size: 2em;
   transition: color .6s;
 }
 
@@ -76,12 +73,14 @@
   .liens{
     display: none;
   }
-
-  .mobile-menu-btn{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    transition: transform 1s;
-  }
   
+  .linksInNav:hover{
+      color: #2196F3;
+  }
+
+  
+  .linksContainers:hover{
+    padding-bottom: 0;
+    border-bottom: hidden;
+  }
 }

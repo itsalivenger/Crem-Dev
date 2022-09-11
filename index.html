@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./assets/styles/navbar.css" rel="stylesheet" />
     <link href="./assets/styles/index.css" rel="stylesheet" />
     <link href="./assets/styles/switch.css" rel="stylesheet" />
     <link href="./assets/fonts/BebasNeue-Regular.ttf" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik+Dirt&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik+Dirt&display=swap"
+      rel="stylesheet"
+    />
     <link href="./assets/styles/button.css" rel="stylesheet" />
     <link href="./assets/styles/smoothScroll.css" rel="stylesheet" />
     <link href="./assets/styles/hiddenMenu.css" rel="stylesheet" />
@@ -19,247 +22,294 @@
     <link href="./assets/styles/thirdSection.css" rel="stylesheet" />
     <link href="./assets/styles/flipCards.css" rel="stylesheet" />
     <!-- Bootstrap CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Crem Dev | Your futur warlord</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav id="navbar">
+      <div class="logo">
+        <a href="#" id="logoText">Crem</a>
+      </div>
+      <div class="liens">
+        <a class="linksContainers">
+          <div class="linksInNav" href="#">Home</div>
+        </a>
 
-        <div class="logo">
-            <a href="#" id="logoText">Crem</a>
+        <a class="linksContainers">
+          <div class="linksInNav" href="#">Service</div>
+        </a>
+
+        <a class="linksContainers">
+          <div class="linksInNav" href="#">Blog</div>
+        </a>
+
+        <a class="linksContainers">
+          <div class="linksInNav" href="#">Contact</div>
+        </a>
+
+        <a class="linksContainers">
+          <div class="linksInNav" href="#">About us</div>
+        </a>
+      </div>
+      <div class="lightSwitch">
+        <!-- Rounded switch -->
+        <label class="switch">
+          <input type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+      </div>
+
+      <div onclick="toggle()" class="button-container">
+        <span class="mask">
+          <div class="box-in-menu-btn white"></div>
+          <div class="box-in-menu-btn white"></div>
+          <div class="box-in-menu-btn white"></div>
+        </span>
+        <button type="button" name="Hover">
+          <div class="box-in-menu-btn black"></div>
+          <div class="box-in-menu-btn black"></div>
+          <div class="box-in-menu-btn black"></div>
+        </button>
+      </div>
+
+      <div class="toggle-Menu">
+        <button onclick="toggle()" class="closeBtn btn-close"></button>
+        <div class="nav-link">
+          <a href="#">Home</a>
         </div>
-        <div class="liens">
-            <a class="linksContainers">
-                <div class="linksInNav" href="#">Home</div>
-            </a>
-
-            <a class="linksContainers">
-                <div class="linksInNav" href="#">Service</div>
-            </a>
-            
-            <a class="linksContainers">
-                <div class="linksInNav" href="#">Blog</div>
-            </a>
-
-            <a class="linksContainers">
-                <div class="linksInNav" href="#">Contact</div>
-            </a>
-
-            <a class="linksContainers">
-                <div class="linksInNav" href="#">About us</div>
-            </a>
+        <div class="nav-link">
+          <a href="#">Services</a>
         </div>
-        <div class="lightSwitch">
-            <!-- Rounded switch -->
-            <label class="switch">
-                <input type="checkbox">
-                <span class="slider round"></span>
-            </label>
+        <div class="nav-link">
+          <a href="#">Blog</a>
         </div>
-
-
-        <div onclick="toggle()" class="button-container">
-            <span class="mask">
-                <div class="box-in-menu-btn white"></div>
-                <div class="box-in-menu-btn white"></div>
-                <div class="box-in-menu-btn white"></div>
-            </span>
-            <button type="button" name="Hover">
-                <div class="box-in-menu-btn black"></div>
-                <div class="box-in-menu-btn black"></div>
-                <div class="box-in-menu-btn black"></div>
-            </button>
+        <div class="nav-link">
+          <a href="#">Contact</a>
         </div>
-
-        <div class="toggle-Menu">
-            <div class="" style="margin-left: 50px;">
-                <a href="#">Home</a>
-            </div>
-            <div class="" style="margin-left: 20px;">
-                <a href="#">Services</a>
-            </div>
-            <div class="" style="margin-left: 1em;">
-                <a href="#">Blog</a>
-            </div>
-            <div class="" style="margin-left: 20px;">
-                <a href="#">Contact</a>
-            </div>
-            <div class="" style="margin-left: 50px;">
-                <a href="#">About us</a>
-            </div>
-            <div onclick="toggle()" class="closeBtn">X</div>
+        <div class="nav-link">
+          <a href="#">About us</a>
         </div>
-
+      </div>
     </nav>
 
     <section id="home" class="firstSection">
-        <div class="homeContent">
-            <h2>Join Our Road To Ascension</h2>
-            <p class="homeText">
-                Crem Dev is a something who will be VEEERY something in the upcoming futur... \n
-                get ready for the new era of Crem
-            </p>
-            <button class="btn firstSectionBtn">Get Started</button>
-        </div>
+      <div class="homeContent">
+        <h2>Join Our Road To Ascension</h2>
+        <p class="homeText">
+          Crem Dev is a something who will be VEEERY something in the upcoming
+          futur... \n get ready for the new era of Crem
+        </p>
+        <button class="btn firstSectionBtn">Get Started</button>
+      </div>
     </section>
 
     <section id="whyUs" class="secondSection reveals fade-lefts">
-        <div class="titles">
-            <hr />
-            <h2 class="whyUsTitle">Why Choose Us</h2>
-            <hr />
+      <div class="titles">
+        <hr />
+        <h2 class="whyUsTitle">Why Choose Us</h2>
+        <hr />
+      </div>
+      <p class="textUnderTitle">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+        consectetur atque ipsa, sapiente aut et doloremque aliquid accusantium
+        placeat tempore?
+      </p>
+      <div class="statisticsContainer">
+        <div class="statistics">
+          <i class="iconsInWhatWeDo fa fa-file"></i>
+          <h3 class="numberOfAttr">0</h3>
+          <p class="numberDesc">Projects done</p>
         </div>
-        <div class="statisticsContainer">
-            <div class="statistics">
-                <i class="iconsInWhatWeDo fa fa-file"></i>
-                <h3 class="numberOfAttr">0</h3>
-                <p class="numberDesc">Projects done</p>
-            </div>
-            <div class="statistics">
-                <i class="iconsInWhatWeDo fa fa-hourglass"></i>
-                <h3 class="numberOfAttr">0</h3>
-                <p class="numberDesc">working hours</p>
-            </div>
-            <div class="statistics">
-                <i class="iconsInWhatWeDo fa fa-cloud-download"></i>
-                <h3 class="numberOfAttr">0</h3>
-                <p class="numberDesc">Specialists</p>
-            </div>
-            <div class="statistics">
-                <i class="iconsInWhatWeDo fa fa-user"></i>
-                <h3 class="numberOfAttr">0</h3>
-                <p class="numberDesc">Satisfied Customers</p>
-            </div>
+        <div class="statistics">
+          <i class="iconsInWhatWeDo fa fa-hourglass"></i>
+          <h3 class="numberOfAttr">0</h3>
+          <p class="numberDesc">working hours</p>
         </div>
+        <div class="statistics">
+          <i class="iconsInWhatWeDo fa fa-cloud-download"></i>
+          <h3 class="numberOfAttr">0</h3>
+          <p class="numberDesc">Specialists</p>
+        </div>
+        <div class="statistics">
+          <i class="iconsInWhatWeDo fa fa-user"></i>
+          <h3 class="numberOfAttr">0</h3>
+          <p class="numberDesc">Satisfied Customers</p>
+        </div>
+      </div>
     </section>
 
-    <section class="thirdSection reveals fade-bottoms" >
-        <div class="titles">
-            <hr />
-            <h2 class="ourServicesTitle">Our Services</h2>
-            <hr />
+    <section class="thirdSection reveals fade-bottoms">
+      <div class="titles">
+        <hr />
+        <h2 class="ourServicesTitle">Our Services</h2>
+        <hr />
+      </div>
+      <p class="textUnderTitle">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta aliquid
+        molestiae quisquam a reprehenderit suscipit non doloribus accusamus
+        quibusdam atque odio reiciendis
+      </p>
+      <div class="scrollLabel">
+        <h3>1 / 6</h3>
+      </div>
+      <div class="arrows">
+        <div style="visibility: hidden" class="leftArr" onclick="navigate(-1)">
+          <
         </div>
-        <div class="scrollLabel">
-            <h3>1 / 6</h3>
-        </div>
-        <div class="arrows">
-            <div style="visibility: hidden;" class="leftArr" onclick="navigate(-1)"><</div>
-            <div class="rightArr" onclick="navigate(1)">></div>
-        </div>
-        <div id="horizontalScroll">
-            <div class="whatWeDoContentContainer">
-                <div class="services">
-                    <div id="websitesBg" class="backgrounds"></div>
-                    <div class="serviceContent">
-                        <button class="btn toggleBtn" onclick="toggleContent(this.parentElement.parentElement)">Read More</button>
-                        <div>
-                            <i class="fa fa-laptop iconsInServices"></i>
-                            <h3>Website</h3>
-                        </div>
-                        <p class="serviceContentTextUntoggled">
-                            Here at Crem Dev our team make sure to deliver best quality websites out there in the internet.
-                            With any desirable feature to be implemented into your website, we make sure to only deliver the best results. 
-                        </p>
-                    </div>
-                </div>
-
-                
-                <div class="services">
-                    <div id="responsiveBg" class="backgrounds"></div>
-                    <div class="serviceContent">
-                        <button class="btn toggleBtn" onclick="toggleContent(this.parentElement.parentElement)">Read More</button>
-                        <div>
-                            <i class="fa fa-arrows iconsInServices"></i>
-                            <h3>Fully Responsive</h3>
-                        </div>
-                        <p class="serviceContentTextUntoggled">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Quo suscipit esse accusamus neque labore culpa eveniet
-                            nesciunt dolorem saepe? Aperiam iste voluptate deleniti
-                            blanditiis perspiciatis ea, nesciunt quasi reiciendis omnis.
-                        </p>
-                    </div>
-                </div>
-
-
-                
-                <div class="services">
-                    <div id="mobilePhoneBg" class="backgrounds"></div>
-                    <div class="serviceContent">
-                        <button class="btn toggleBtn" onclick="toggleContent(this.parentElement.parentElement)">Read More</button>
-                        <div>
-                            <i class="fa fa-mobile-phone iconsInServices"></i>
-                            <h3>Mobile Apps</h3>
-                        </div>
-                        <p class="serviceContentTextUntoggled">
-                            Our team doesn't only consists on websites, we also Do Mobile apps and yes, just like websites,
-                            we can scale our products.
-                        </p>
-                    </div>
-                </div>
-
-
-                <div class="services">
-                    <div id="webMarketing" class="backgrounds"></div>
-                    <div class="serviceContent">
-                        <button class="btn toggleBtn" onclick="toggleContent(this.parentElement.parentElement)">Read More</button>
-                        <div>
-                            <i class="fa fa-bullseye iconsInServices"></i>
-                            <h3>Web Marketing</h3>
-                        </div>
-                        <p class="serviceContentTextUntoggled">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Quo suscipit esse accusamus neque labore culpa eveniet
-                            nesciunt dolorem saepe? Aperiam iste voluptate deleniti
-                            blanditiis perspiciatis ea, nesciunt quasi reiciendis omnis.
-                        </p>
-                    </div>
-                </div>
-
-                
-                <div class="services">
-                    <div id="maintenance" class="backgrounds"></div>
-                    <div class="serviceContent">
-                        <button class="btn toggleBtn" onclick="toggleContent(this.parentElement.parentElement)">Read More</button>
-                        <div>
-                            <i class="fa fa-bullhorn iconsInServices"></i>
-                            <h3>Website Maintenance</h3>
-                        </div>
-                        <p class="serviceContentTextUntoggled">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Quo suscipit esse accusamus neque labore culpa eveniet
-                            nesciunt dolorem saepe? Aperiam iste voluptate deleniti
-                            blanditiis perspiciatis ea, nesciunt quasi reiciendis omnis.
-                        </p>
-                    </div>
-                </div>
-
-                
-                <div class="services">
-                    <div id="pricing" class="backgrounds"></div>
-                    <div class="serviceContent">
-                        <button class="btn toggleBtn" onclick="toggleContent(this.parentElement.parentElement)">Read More</button>
-                        <div>
-                            <i class="fa fa-money iconsInServices"></i>
-                            <h3>Reasonable Pricing</h3>
-                        </div>
-                        <p class="serviceContentTextUntoggled">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Quo suscipit esse accusamus neque labore culpa eveniet
-                            nesciunt dolorem saepe? Aperiam iste voluptate deleniti
-                            blanditiis perspiciatis ea, nesciunt quasi reiciendis omnis.
-                        </p>
-                    </div>
-                </div>
+        <div class="rightArr" onclick="navigate(1)">></div>
+      </div>
+      <div id="horizontalScroll">
+        <div class="whatWeDoContentContainer">
+          <div class="services">
+            <div id="websitesBg" class="backgrounds"></div>
+            <div class="serviceContent">
+              <button
+                class="btn toggleBtn"
+                onclick="toggleContent(this.parentElement.parentElement)"
+              >
+                Read More
+              </button>
+              <div>
+                <i class="fa fa-laptop iconsInServices"></i>
+                <h3>Website</h3>
+              </div>
+              <p class="serviceContentTextUntoggled">
+                Here at Crem Dev our team make sure to deliver best quality
+                websites out there in the internet. With any desirable feature
+                to be implemented into your website, we make sure to only
+                deliver the best results.
+              </p>
             </div>
+          </div>
+
+          <div class="services">
+            <div id="responsiveBg" class="backgrounds"></div>
+            <div class="serviceContent">
+              <button
+                class="btn toggleBtn"
+                onclick="toggleContent(this.parentElement.parentElement)"
+              >
+                Read More
+              </button>
+              <div>
+                <i class="fa fa-arrows iconsInServices"></i>
+                <h3>Fully Responsive</h3>
+              </div>
+              <p class="serviceContentTextUntoggled">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                suscipit esse accusamus neque labore culpa eveniet nesciunt
+                dolorem saepe? Aperiam iste voluptate deleniti blanditiis
+                perspiciatis ea, nesciunt quasi reiciendis omnis.
+              </p>
+            </div>
+          </div>
+
+          <div class="services">
+            <div id="mobilePhoneBg" class="backgrounds"></div>
+            <div class="serviceContent">
+              <button
+                class="btn toggleBtn"
+                onclick="toggleContent(this.parentElement.parentElement)"
+              >
+                Read More
+              </button>
+              <div>
+                <i class="fa fa-mobile-phone iconsInServices"></i>
+                <h3>Mobile Apps</h3>
+              </div>
+              <p class="serviceContentTextUntoggled">
+                Our team doesn't only consists on websites, we also Do Mobile
+                apps and yes, just like websites, we can scale our products.
+              </p>
+            </div>
+          </div>
+
+          <div class="services">
+            <div id="webMarketing" class="backgrounds"></div>
+            <div class="serviceContent">
+              <button
+                class="btn toggleBtn"
+                onclick="toggleContent(this.parentElement.parentElement)"
+              >
+                Read More
+              </button>
+              <div>
+                <i class="fa fa-bullseye iconsInServices"></i>
+                <h3>Web Marketing</h3>
+              </div>
+              <p class="serviceContentTextUntoggled">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                suscipit esse accusamus neque labore culpa eveniet nesciunt
+                dolorem saepe? Aperiam iste voluptate deleniti blanditiis
+                perspiciatis ea, nesciunt quasi reiciendis omnis.
+              </p>
+            </div>
+          </div>
+
+          <div class="services">
+            <div id="maintenance" class="backgrounds"></div>
+            <div class="serviceContent">
+              <button
+                class="btn toggleBtn"
+                onclick="toggleContent(this.parentElement.parentElement)"
+              >
+                Read More
+              </button>
+              <div>
+                <i class="fa fa-bullhorn iconsInServices"></i>
+                <h3>Website Maintenance</h3>
+              </div>
+              <p class="serviceContentTextUntoggled">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                suscipit esse accusamus neque labore culpa eveniet nesciunt
+                dolorem saepe? Aperiam iste voluptate deleniti blanditiis
+                perspiciatis ea, nesciunt quasi reiciendis omnis.
+              </p>
+            </div>
+          </div>
+
+          <div class="services">
+            <div id="pricing" class="backgrounds"></div>
+            <div class="serviceContent">
+              <button
+                class="btn toggleBtn"
+                onclick="toggleContent(this.parentElement.parentElement)"
+              >
+                Read More
+              </button>
+              <div>
+                <i class="fa fa-money iconsInServices"></i>
+                <h3>Reasonable Pricing</h3>
+              </div>
+              <p class="serviceContentTextUntoggled">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                suscipit esse accusamus neque labore culpa eveniet nesciunt
+                dolorem saepe? Aperiam iste voluptate deleniti blanditiis
+                perspiciatis ea, nesciunt quasi reiciendis omnis.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <script src="./scripts/navMenuToggle.js"></script>
     <script src="./scripts/numbersIncrement.js"></script>
     <script src="./scripts/smoothScrolling.js"></script>
     <script src="./scripts/contentToggling.js"></script>
-</body>
+  </body>
 </html>

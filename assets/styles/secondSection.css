@@ -2,7 +2,8 @@
     padding: 2em;
     display: flex;
     flex-direction: column;
-    gap: .5em;
+    align-items: center;
+    gap: 1em;
     margin: .6em;
 }
 
@@ -10,12 +11,14 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1em;
+    width: 100%;
 }
 
 .statistics{
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
     border: 1px solid black;
     width: 100%;
     padding: 2em 0;
@@ -33,8 +36,18 @@
     text-align: center;
 }
 
+.textUnderTitle{
+    width: 70%;
+    text-align: center;
+}
+
 @media only screen and (max-width: 550px) {
     #whyUs{
         padding: 1em;
+        align-items: center;
+    }
+
+    .textUnderTitle{
+        width: 100%;
     }
 }
