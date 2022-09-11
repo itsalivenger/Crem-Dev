@@ -19,7 +19,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2em;
+    gap: 1em;
     overflow: auto;
 }
 
@@ -77,25 +77,6 @@
     top: 0;
 }
 
-.scrollLabel{
-    text-align: center;
-    margin: 1em;
-    display: none;
-}
-
-.arrows{
-    position: absolute;
-    display: none;
-    color: black;
-    font-size: 3em;
-    font-weight: bolder;
-    top: 55%;
-    z-index: 2;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-}
-
 .titles{
     margin-bottom: .5em;
 }
@@ -141,31 +122,18 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .whatWeDoContentContainer{
-        flex-wrap: nowrap;
-        width: fit-content;
-    }
-
     #horizontalScroll{
         width: 100%;
         overflow-x: hidden;
     }
 
     .services{
-        width: 80vw;
-        height: 30vh;
+        width: 90%;
+        height: 40vh;
     }
 
     .toggleBtn{
         display: inline-block!important;
         width: 50%;
-    }
-    
-    .scrollLabel{
-        display: block;
-    }
-
-    .arrows{
-        display: flex;
     }
 }
