@@ -2,14 +2,11 @@
     background-image: url('../images/firstBackground.jpg');
     background-position: center;
     background-size: cover;
-    object-fit: cover;
-    display: flex;
-    align-items: center;
     justify-content: center;
+    object-fit: cover;
     padding: 6em;
     color: white;
     height: 100vh;
-    margin-top: 0em;
 }
 
 .homeContent{
@@ -23,16 +20,12 @@
 .firstSectionBtn{
     width: 40%;
     color: white!important;
-    background-color: #2195f394!important;
+    background-color: #F2AA4CFF!important;
     transition: all .4s!important;
 }
 
 .firstSectionBtn:hover{
-    background-color: #2195f3c4!important;
-}
-
-.homeText{
-    font-weight: 600;
+    background-color: rgb(238, 157, 51)!important;
 }
 
 @media only screen and (max-width: 770px){

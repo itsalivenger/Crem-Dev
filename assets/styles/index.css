@@ -1,3 +1,7 @@
+/* Colors:
+    F9F9F9 white/ F2AA4CFF yellow / 101820FF black 
+*/
+
 *{
     font-family: 'Bebas Neue', cursive;
     font-family: 'Rubik Dirt', cursive;
@@ -12,12 +16,14 @@ p{
     margin: 0!important;
 }
 
-#horizontalScroll{
-    touch-action: none;
-}
-
 body{
     margin: 0;
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .titles{
@@ -29,17 +35,17 @@ body{
 
 .titles > hr{
     width: 30%;
-    color: #2195f3;
-    border: 1px solid #2195f3;
+    color: #F2AA4CFF;
+    border: 3px solid #F2AA4CFF;
 }
 
 .iconsInWhatWeDo{
     font-size: 20px!important;
     position: absolute;
     top: -10px;
-    background: white;
+    background-color: white;
     border-radius: 10px;
-    color: black;
+    color: #F2AA4CFF;
     padding: 0 1em .5em 1em;
 }
 

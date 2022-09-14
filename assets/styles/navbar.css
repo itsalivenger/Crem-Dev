@@ -1,7 +1,7 @@
 #navbar{
     display: flex;
     justify-content: space-between;
-    background-color: #111;
+    background-color: #101820FF;
     align-items: center;
     padding: .5em 2em;
     position: fixed;
@@ -24,7 +24,7 @@
 
 .linksContainers:hover{
   padding-bottom: 1em;
-  border-bottom: #2196F3 1px solid;
+  border-bottom: #F2AA4CFF 1px solid;
 }
 
 .mobile-menu-btn{
@@ -44,7 +44,7 @@
 }
 
 .black{
-  border: solid black .5px;
+  border: solid #111 .5px;
 }
 
 .lightSwitch{
@@ -66,7 +66,7 @@
 }
 
 #logoText:hover{
-  color: rgb(78, 172, 255);
+  color: #F2AA4CFF;
 }
 
 @media only screen and (max-width: 650px) {
@@ -75,7 +75,7 @@
   }
   
   .linksInNav:hover{
-      color: #2196F3;
+      color: #F2AA4CFF;
   }
 
   
