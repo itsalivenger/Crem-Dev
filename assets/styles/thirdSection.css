@@ -79,28 +79,34 @@
 }
 
 #websitesBg{
-    background-image: url('../images/websiteBg.jpg');
+    background-image: url('http://drive.google.com/uc?export=view&id=1Hs00UBcjYIiUH2gplFlAmMQbh0cGonDX');
+    /* background-image: url('../images/websiteBg.jpg'); */
 }
 
 #mobilePhoneBg{
-    background-image: url('../images/mobilePhone.jpg');
+    background-image: url('http://drive.google.com/uc?export=view&id=1GRWtojrfNtucHdEoE8MyLwmwWsFnwNyy');
+    /* background-image: url('../images/mobilePhone.jpg'); */
 }
 
 
 #responsiveBg{
-    background-image: url('../images/responsiveBg.jpg');
+    background-image: url('http://drive.google.com/uc?export=view&id=15Ft464_WAXb3FPcnEhUhLz5OLnPgv10z');
+    /* background-image: url('../images/responsiveBg.jpg'); */
 }
 
 #webMarketing{
-    background-image: url('../images/webMarketingBg.jpg');
+    background-image: url('http://drive.google.com/uc?export=view&id=1EPp2lwZ1HKbM8DNEll58NOw4k_Tgp_04');
+    /* background-image: url('../images/webMarketingBg.jpg'); */
 }
 
 #pricing{
-    background-image: url('../images/pricingBg.jfif');
+    background-image: url('http://drive.google.com/uc?export=view&id=11FM8SAR8Z6YE8yClSZUMirVW6Mi6Pp7a');
+    /* background-image: url('../images/pricingBg.jfif.jpg'); */
 }
 
 #maintenance{
-    background-image: url('../images/maintenanceBg.jpg');
+    background-image: url('http://drive.google.com/uc?export=view&id=1otARJiA7tPD1hHIquwIBB-51eTj5zBgx');
+    /* background-image: url('../images/maintenanceBg.jpg'); */
 }
 
 @media only screen and (max-width: 1030px) {

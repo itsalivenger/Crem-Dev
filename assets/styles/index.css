@@ -23,6 +23,11 @@ body{
     background-repeat: no-repeat;
 }
 
+.lazy {
+    background-image: none;
+    background-color: #F1F1FA;
+ }
+
 section{
   display: flex;
   flex-direction: column;
