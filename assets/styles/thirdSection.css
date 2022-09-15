@@ -3,7 +3,6 @@
     margin: 0;
     color: white;
     background: linear-gradient(to bottom, #101820FF, #F2AA4CFF);
-    transition: all .4s;
     position: relative;
     gap: 1em;
 }

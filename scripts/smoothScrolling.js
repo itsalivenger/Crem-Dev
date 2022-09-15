@@ -1,18 +1,15 @@
-onload = ()=> scrollBy(0, 10)
-function reveal() {
-    var reveals = document.querySelectorAll(".reveal");
-  
-    for (var i = 0; i < reveals.length; i++) {
-      var windowHeight = window.innerHeight;
-      var elementTop = reveals[i].getBoundingClientRect().top;
-      var elementVisible = 150;
-  
-      if (elementTop < windowHeight - elementVisible) {
-        reveals[i].classList.add("active");
-      } else {
-        reveals[i].classList.remove("active");
-      }
+const observer = new IntersectionObserver((entries)=>{
+  // console.log(entries);
+  entries.forEach((entry)=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add('show');
+    }else{
+      entry.target.classList.remove('show');
     }
-  }
-  
-  window.addEventListener("scroll", reveal);
+  })
+});
+
+const hiddenEles = document.querySelectorAll('.sections');
+
+
+hiddenEles.forEach((e)=> observer.observe(e));

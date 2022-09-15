@@ -14,7 +14,6 @@ function increment(elem, i) {
             time = 50;
         }
         if(parseInt(elem.innerText) >= values[i]){
-            console.log('stopped')
             clearTimeout(timeout);
             return;
         }
