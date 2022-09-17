@@ -26,8 +26,11 @@ hiddenEles.forEach((e)=> observer.observe(e));
 
 for (let i = 0; i < cards.length; i++) {
   cards[i].addEventListener('mouseover', (e)=>{
-    resetGrids();
-    e.target.style.gridArea = 'content';
+    document.getElementById('cloned') ? document.getElementById('cloned').remove() : 0;
+    let clonedContent = e.target.cloneNode(true);
+    clonedContent.id = 'cloned';
+    e.target.parentElement.appendChild(clonedContent);
+    clonedContent.style.gridArea = 'content';
   });
 }
 
