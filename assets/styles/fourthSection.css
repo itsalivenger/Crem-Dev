@@ -1,6 +1,141 @@
+:root{
+    --stagger: 200ms;
+}
+
 .fourthSection{
     gap: 1em;
     padding: 4em 2em;
     background-color: #F9F9F9;
 }
 
+.gallery{
+    display: grid;
+    width: 100%;
+    height: 85vh;
+    grid-template-areas:
+    'a b c d'
+    'l content content e'
+    'k content content f'
+    'j i h g';
+    grid-template-rows: repeat(4, 25%);
+    grid-template-columns: 20% auto auto 20%;
+    gap: 1em;
+    padding: 3em;
+}
+
+.projectCard{
+    background-color: #101820FF;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s;
+    box-shadow: 4px 2px 35px -11px #101820FF;
+    animation: showAnimation .7s ease-out;
+    animation-fill-mode: backwards;
+}
+
+.projectCard:hover{
+    transform: scale(1.06);
+}
+
+.projectCard:nth-child(1){
+    grid-area: a;
+    animation-delay: calc(1 * var(--stagger));
+}
+
+
+.projectCard:nth-child(2){
+    grid-area: b;
+    animation-delay: calc(2 * var(--stagger));
+}
+
+
+.projectCard:nth-child(3){
+    grid-area: c;
+    animation-delay: calc(3 * var(--stagger));
+}
+
+.projectCard:nth-child(4){
+    grid-area: d;
+    animation-delay: calc(4 * var(--stagger));
+}
+
+.projectCard:nth-child(5){
+    grid-area: e;
+    animation-delay: calc(5 * var(--stagger));
+}
+
+.projectCard:nth-child(6){
+    grid-area: f;
+    animation-delay: calc(6 * var(--stagger));
+}
+
+.projectCard:nth-child(7){
+    grid-area: g;
+    animation-delay: calc(7 * var(--stagger));
+}
+
+.projectCard:nth-child(8){
+    grid-area: h;
+    animation-delay: calc(8 * var(--stagger));
+}
+
+.projectCard:nth-child(9){
+    grid-area: i;
+    animation-delay: calc(9 * var(--stagger));
+}
+.projectCard:nth-child(10){
+    grid-area: j;
+    animation-delay: calc(10 * var(--stagger));
+}
+
+.projectCard:nth-child(11){
+    grid-area: k;
+    animation-delay: calc(11 * var(--stagger));
+}
+
+.projectCard:nth-child(12){
+    grid-area: l;
+    animation-delay: calc(12 * var(--stagger));
+}
+
+.projectCard:nth-child(13){
+    grid-area: content;
+    animation-delay: calc(13 * var(--stagger));
+}
+@keyframes showAnimation {
+    from{
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+.discoverBtnContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 770px){
+    .gallery{
+        padding: 1em;
+    }
+}
+
+@media (max-width: 425px){
+    .gallery{
+        padding: 0;
+        gap: 0;
+    }
+    .fourthSection{
+        padding: 0;
+    }
+}
