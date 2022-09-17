@@ -11,7 +11,7 @@
 .gallery{
     display: grid;
     width: 100%;
-    height: 85vh;
+    height: 100vh;
     grid-template-areas:
     'a b c d'
     'l content content e'
@@ -100,10 +100,7 @@
     animation-delay: calc(12 * var(--stagger));
 }
 
-.projectCard:nth-child(13){
-    grid-area: content;
-    animation-delay: calc(13 * var(--stagger));
-}
+
 @keyframes showAnimation {
     from{
         opacity: 0;
@@ -122,6 +119,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.discoverBtn{
+    margin-top: 2em;
+    width: 25%;
+    background-color: #F2AA4CFF !important;
 }
 
 @media (max-width: 770px){
