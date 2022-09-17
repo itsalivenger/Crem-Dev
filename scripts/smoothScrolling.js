@@ -33,11 +33,3 @@ for (let i = 0; i < cards.length; i++) {
     clonedContent.style.gridArea = 'content';
   });
 }
-
-function resetGrids() {
-  let area = ['a', 'b', "c", "d", 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'content', 'content', 'content', 'content'];
-  for (let i = 0; i < cards.length; i++) {
-    cards[i].style.gridArea = area[i];
-    cards[i].style.animation = 'showAnimation';
-  }
-}

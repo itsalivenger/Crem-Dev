@@ -6,6 +6,15 @@
     gap: 1em;
     padding: 4em 2em;
     background-color: #F9F9F9;
+    position: relative;
+    z-index: 0;
+}
+
+.svg{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
 }
 
 .gallery{
@@ -31,7 +40,7 @@
     align-items: center;
     transition: all .2s;
     box-shadow: 4px 2px 35px -11px #101820FF;
-    animation: showAnimation .7s ease-out;
+    animation: showAnimation .5s ease-out;
     animation-fill-mode: backwards;
 }
 
@@ -127,18 +136,41 @@
     background-color: #F2AA4CFF !important;
 }
 
-@media (max-width: 770px){
+@media (max-width: 1024px){
     .gallery{
-        padding: 1em;
+        padding: 0;
+    }
+}
+
+
+@media (max-width: 770px){
+    .fourthSection{
+        padding: 1em 0;
+        height: 80vh;
+    }
+
+    .gallery{
+        gap: .5em;
+        padding: 0;
     }
 }
 
 @media (max-width: 425px){
+    .fourthSection{
+        grid-area: 
+        'a b c d'
+        'content content'
+        'h g f e';
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 240px 480px 240px;
+    }
+
     .gallery{
         padding: 0;
-        gap: 0;
+        gap: .2em;
     }
-    .fourthSection{
-        padding: 0;
+
+    .discoverBtn{
+        width: 70%;
     }
 }
