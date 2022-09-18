@@ -19,8 +19,8 @@
 }
 
 .testimonials{
-    border-right: 1px solid black;
-    border-left: 1px solid black;
+    background: linear-gradient(to right, rgba(242, 170, 76, 0.212), #F9F9F9);
+    box-shadow: 1px -4px 10px 0px rgba(0,0,0,0.75);
     border-radius: 10px;
     width: 100%;
     width: 85%;
