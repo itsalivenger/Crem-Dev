@@ -1,0 +1,55 @@
+.seventhSection{
+    display: flex;
+    flex-direction: column;
+    background-color: #101820FF;
+    color: #F9F9F9;
+}
+
+.reachUsContent{
+    display: flex;
+    flex-direction: row;
+}
+
+.reachUsText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.reachUsText > div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.reachUsContent > *{
+    width: 50%;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+
+.nameAndEmail{
+    display: flex;
+    gap: 1em;
+}
+
+.subject{
+    width: 100%;
+}
+
+.submitBtnContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.submitBtn{
+    width: 40%;
+    background-color: #F2AA4CFF !important;
+}
