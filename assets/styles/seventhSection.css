@@ -53,3 +53,33 @@
     width: 40%;
     background-color: #F2AA4CFF !important;
 }
+
+@media (max-width: 450px) {
+    .seventhSection{
+        margin-top: 2em;
+        padding-top: 2em;
+    }
+
+    .reachUsContent{
+        flex-direction: column;
+    }
+
+    .reachUsContent > *{
+        width: 100%;
+    }
+
+    .reachUsText > div{
+        width: 100%;
+        padding: 1em;
+        gap: 1em;
+        text-align: center;
+    }
+
+    .form{
+        padding: .5em;
+    }
+
+    .submitBtn{
+        width: 60%;
+    }
+}
