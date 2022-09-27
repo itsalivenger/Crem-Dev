@@ -25,7 +25,8 @@ async function submitMail() {
             message: message.value
         }),
         headers: {
-            'Content-type': 'application/json'
+            'Content-type': 'application/json',
+            "Access-Control-Allow-Origin": "*"
         }
     });
     let res = await req.json();
