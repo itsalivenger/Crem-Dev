@@ -16,7 +16,8 @@ function sent() {
 
 async function submitMail() {
     const [ name, email, subject, message ] = document.querySelectorAll('.mailsInfos');
-    let req = await fetch('https://git.heroku.com/cremdev.git', {
+    console.log('first')
+    let req = await fetch('https://cremdev.herokuapp.com/', {
         method: 'POST',
         body: JSON.stringify({
             name: name.value,
@@ -31,5 +32,4 @@ async function submitMail() {
     });
     let res = await req.json();
     console.log(res.msg);
-    return res;
 }
