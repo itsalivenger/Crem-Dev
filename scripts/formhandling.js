@@ -29,6 +29,6 @@ async function submitMail() {
         }
     });
     let res = await req.json();
-
+    console.log(res.msg);
     return res;
 }
