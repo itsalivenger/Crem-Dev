@@ -1,0 +1,34 @@
+
+const contactForm = document.getElementById('contactForm');
+contactForm.addEventListener('submit', (e)=>{
+    e.preventDefault();
+    submitMail();
+});
+
+
+function sent() {
+    const sentTemplate = document.getElementById('sentSuccessTemplate');
+    sentTemplate.style.display = 'flex';
+    setTimeout(() => {
+        sentTemplate.style.display = 'none';
+    }, 1500);
+}
+
+async function submitMail() {
+    const [ name, email, subject, message ] = document.querySelectorAll('.mailsInfos');
+    let req = await fetch('http://localhost:5050/', {
+        method: 'POST',
+        body: JSON.stringify({
+            name: name.value,
+            email: email.value,
+            subject: subject.value,
+            message: message.value
+        }),
+        headers: {
+            'Content-type': 'application/json'
+        }
+    });
+    let res = await req.json();
+
+    return res;
+}

@@ -27,6 +27,7 @@
     <link href="./assets/styles/floatingLabelAnim.css" rel="stylesheet" />
     <link href="./assets/styles/shapes.css" rel="stylesheet" />
     <link href="./assets/styles/footer.css" rel="stylesheet" />
+    <link href="./assets/styles/scrollTopArr.css" rel="stylesheet" />
     <!-- Bootstrap CSS only -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
@@ -52,24 +53,24 @@
         <a href="#" id="logoText">Crem</a>
       </div>
       <div class="liens">
-        <a class="linksContainers">
+        <a class="linksContainers" onclick="scrollToContent('home')">
           <div class="linksInNav" href="#">Home</div>
         </a>
 
-        <a class="linksContainers">
-          <div class="linksInNav" href="#">Service</div>
+        <a class="linksContainers" onclick="">
+          <div class="linksInNav" href="#">Services</div>
         </a>
 
-        <a class="linksContainers">
-          <div class="linksInNav" href="#">Blog</div>
+        <a class="linksContainers" onclick="scrollToContent('ourWork')">
+          <div class="linksInNav" href="#">Our Work</div>
         </a>
 
-        <a class="linksContainers">
-          <div class="linksInNav" href="#">Contact</div>
-        </a>
-
-        <a class="linksContainers">
+        <a class="linksContainers" onclick="scrollToContent('about')">
           <div class="linksInNav" href="#">About us</div>
+        </a>
+
+        <a class="linksContainers" onclick="scrollToContent('contact')">
+          <div class="linksInNav" href="#">Contact us</div>
         </a>
       </div>
       <div class="lightSwitch">
@@ -95,21 +96,25 @@
 
       <div class="toggle-Menu">
         <button onclick="toggle()" class="closeBtn btn-close"></button>
-        <div class="nav-link">
-          <a href="#">Home</a>
-        </div>
-        <div class="nav-link">
-          <a href="#">Services</a>
-        </div>
-        <div class="nav-link">
-          <a href="#">Blog</a>
-        </div>
-        <div class="nav-link">
-          <a href="#">Contact</a>
-        </div>
-        <div class="nav-link">
-          <a href="#">About us</a>
-        </div>
+          <a class="linksContainers" onclick="scrollToContent('home')">
+            <div style='color: #101820FF' class="linksInNav" href="#">Home</div>
+          </a>
+  
+          <a class="linksContainers" onclick="scrollToContent('services')">
+            <div style='color: #101820FF' class="linksInNav" href="#">Services</div>
+          </a>
+  
+          <a class="linksContainers" onclick="scrollToContent('ourWork')">
+            <div style='color: #101820FF' class="linksInNav" href="#">Our Work</div>
+          </a>
+  
+          <a class="linksContainers" onclick="scrollToContent('about')">
+            <div style='color: #101820FF' class="linksInNav" href="#">About us</div>
+          </a>
+  
+          <a class="linksContainers" onclick="scrollToContent('contact')">
+            <div style='color: #101820FF' class="linksInNav" href="#">Contact us</div>
+          </a>
       </div>
     </nav>
 
@@ -159,7 +164,7 @@
       </div>
     </section>
 
-    <section class="thirdSection">
+    <section id="services" class="thirdSection">
       <div class="titles">
         <hr />
         <h2 class="ourServicesTitle">Our Services</h2>
@@ -177,7 +182,7 @@
             <div class="serviceContent">
               <div>
                 <i class="fa fa-laptop iconsInServices"></i>
-                <h3>Website</h3>
+                <p class="serviceTitle">Website</p>
               </div>
               <p class="serviceContentTextUntoggled">
                 Here at Crem Dev our team make sure to deliver best quality
@@ -193,7 +198,7 @@
             <div class="serviceContent">
               <div>
                 <i class="fa fa-arrows iconsInServices"></i>
-                <h3>Fully Responsive</h3>
+                <p class="serviceTitle">Fully Responsive</p>
               </div>
               <p class="serviceContentTextUntoggled">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
@@ -209,7 +214,7 @@
             <div class="serviceContent">
               <div>
                 <i class="fa fa-mobile-phone iconsInServices"></i>
-                <h3>Mobile Apps</h3>
+                <p class="serviceTitle">Mobile Apps</p>
               </div>
               <p class="serviceContentTextUntoggled">
                 Our team doesn't only consists on websites, we also Do Mobile
@@ -223,7 +228,7 @@
             <div class="serviceContent">
               <div>
                 <i class="fa fa-bullseye iconsInServices"></i>
-                <h3>Web Marketing</h3>
+                <p class="serviceTitle">Web Marketing</p>
               </div>
               <p class="serviceContentTextUntoggled">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
@@ -239,7 +244,7 @@
             <div class="serviceContent">
               <div>
                 <i class="fa fa-bullhorn iconsInServices"></i>
-                <h3>Website Maintenance</h3>
+                <p class="serviceTitle">Website Maintenance</p>
               </div>
               <p class="serviceContentTextUntoggled">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
@@ -255,7 +260,7 @@
             <div class="serviceContent">
               <div>
                 <i class="fa fa-money iconsInServices"></i>
-                <h3>Reasonable Pricing</h3>
+                <p class="serviceTitle">Reasonable Pricing</p>
               </div>
               <p class="serviceContentTextUntoggled">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
@@ -269,7 +274,7 @@
       </div>
     </section>
 
-    <section class="fourthSection">
+    <section id="ourWork" class="fourthSection">
       <svg
         class="svg"
         xmlns="http://www.w3.org/2000/svg"
@@ -311,7 +316,7 @@
       </div>
     </section>
 
-    <section class="fifthSection">
+    <section id="about" class="fifthSection">
       <div class="titles">
         <hr />
         <h2 class="ourServicesTitle" style="color: white">About Us</h2>
@@ -319,14 +324,12 @@
       </div>
 
       <div class="textContainer">
-        <div>
           <div style="top: 50%; right: 0" class="shapes star-five"></div>
           <div style="left: 0" class="shapes heart"></div>
           <div style="right: 0" class="shapes infinity"></div>
           <div style="bottom: 20%; left: 45%" class="shapes talkbubble"></div>
           <div style="left: 0; top: 50%" class="shapes badge-ribbon"></div>
           <div style="right: 40%" class="shapes lock"></div>
-        </div>
         <div class="textContents">
           <h2>Some kind of Title and explanation</h2>
           <p>
@@ -369,7 +372,7 @@
       </div>
     </section>
 
-    <section class="sixthSection">
+    <section id="testimonials" class="sixthSection">
       <div class="titles">
         <hr />
         <h2 class="ourServicesTitle" style="color: #101820ff">
@@ -446,7 +449,7 @@
       </div>
     </section>
 
-    <section class="seventhSection">
+    <section id='contact' class="seventhSection">
       <div class="titles">
         <hr />
         <h2 class="ourServicesTitle" style="color: #F9F9F9">
@@ -463,35 +466,35 @@
         </div>
       </div>
 
-      <form class="form">
+      <form class="form" id="contactForm">
         <div class="nameAndEmail">
           <div class="form-group">
-            <input type="text" required/>
+            <input class="mailsInfos" type="text" required/>
             <label for="name">Name</label>
           </div>
           
           <div class="form-group">
-            <input type="email" required/>
+            <input class="mailsInfos" type="text" required/>
             <label for="name">Email</label>
           </div>
         </div>
 
         <div class="subject">
           <div class="form-group">
-            <input type="text" required/>
+            <input class="mailsInfos" type="text" required/>
             <label for="name">Subject Line</label>
           </div>
         </div>
         
         <div class="message">
           <div class="form-group">
-            <textarea required></textarea>
+            <textarea class="mailsInfos" required></textarea>
             <label for="name">Subject Line</label>
           </div>
         </div>
 
         <div class="submitBtnContainer">
-          <button class="btn submitBtn">Send Message !</button>
+          <button type="submit" id="contactSubmitBtn" class="btn submitBtn">Send Message !</button>
         </div>
       </form>
       </div>
@@ -593,10 +596,22 @@
       <!-- Copyright -->
     </footer>
 
+    <div class="scrollToTopArrow">
+      <div class="center-con">
+        <div class="circulaire">
+            <div id="cta">
+                <span class="arrow primera next "></span>
+                <span class="arrow segunda next "></span>
+            </div>
+        </div>
+      </div>    
+    </div>
+
 
     <script src="./scripts/navMenuToggle.js"></script>
     <script src="./scripts/numbersIncrement.js"></script>
     <script src="./scripts/smoothScrolling.js"></script>
     <script src="./scripts/contentToggling.js"></script>
+    <script src="./scripts/formhandling.js"></script>
   </body>
 </html>

@@ -33,3 +33,12 @@ for (let i = 0; i < cards.length; i++) {
     clonedContent.style.gridArea = 'content';
   });
 }
+
+function scrollToContent(id) {
+  document.getElementById(id).scrollIntoView({behavior: 'smooth'});
+  toggle();
+}
+
+document.querySelector('.circulaire').addEventListener('click', (e)=>{
+  document.getElementById('home').scrollIntoView({behavior: 'smooth'});
+})

@@ -40,6 +40,10 @@
     .fifthSection{
         padding: 0;
     }
+    .textContainer{
+        padding: 1em;
+        gap: 0;
+    }
 }
 
 @media (max-width: 450px) {
@@ -52,6 +56,7 @@
     .textContents{
         width: 100%;
         top: 0;
+        margin: 0;
     }
     .lock{
         display: none;
