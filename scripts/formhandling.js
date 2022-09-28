@@ -25,7 +25,7 @@ async function submitMail() {
             subject: subject.value,
             message: message.value
         }),
-        credentials: true,
+        credentials: 'include',
         headers: {
             'Content-type': 'application/json',
             "Access-Control-Allow-Origin": "*"
