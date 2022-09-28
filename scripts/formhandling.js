@@ -18,13 +18,14 @@ async function submitMail() {
     const [ name, email, subject, message ] = document.querySelectorAll('.mailsInfos');
     console.log('first')
     let req = await fetch('https://cremdev.herokuapp.com/', {
-        method: 'GET',
-        // body: JSON.stringify({
-        //     name: name.value,
-        //     email: email.value,
-        //     subject: subject.value,
-        //     message: message.value
-        // }),
+        method: 'POST',
+        body: JSON.stringify({
+            name: name.value,
+            email: email.value,
+            subject: subject.value,
+            message: message.value
+        }),
+        credentials: true,
         headers: {
             'Content-type': 'application/json',
             "Access-Control-Allow-Origin": "*"
