@@ -1,4 +1,4 @@
-
+const requestUrl = 'https://cremdev.herokuapp.com/';
 const contactForm = document.getElementById('contactForm');
 contactForm.addEventListener('submit', (e)=>{
     e.preventDefault();
@@ -17,7 +17,7 @@ function sent() {
 async function submitMail() {
     const [ name, email, subject, message ] = document.querySelectorAll('.mailsInfos');
     console.log('first')
-    let req = await fetch('https://cremdev.herokuapp.com/', {
+    let req = await fetch(requestUrl, {
         method: 'POST',
         body: JSON.stringify({
             name: name.value,
