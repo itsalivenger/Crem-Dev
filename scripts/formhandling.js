@@ -61,6 +61,7 @@ async function submitMail(purpose, method) {
         }
     } catch (error) {
         modalBoxText('There was an error submiting the email, please try again later.', 'err');
+        console.log(error);
     }
 
     // display of the modal box after the submission
