@@ -29,7 +29,7 @@ async function submitMail(purpose, method) {
     let requestParams = {method};
     if(purpose === 'contactForm'){
         var [ name, email, subject, message ] = document.querySelectorAll('.mailsInfos');
-        let houbi = name.value;
+        
         requestParams.body = JSON.stringify({
             name: name.value,
             email: email.value,
@@ -51,12 +51,10 @@ async function submitMail(purpose, method) {
     try {
         let req = await fetch(requestUrl, requestParams);
         let res = await req.json();
-        console.log(name)
-        if(houbi == 'houbek'){
+        if(name.value == 'houbek'){
             modalBoxText('Chokraaaaaaan houbiiii; love you anaaaa o bizbizzzzzzzzz je reponds ana :3.', 'success')
-            return;
         }
-        if(res.msg === 'noted'){
+        if(res.msg === 'noted' && name.value != "houbek"){
             modalBoxText('Email was sent successefully, we will reach out to you as soon as possible.', 'success');
         }
     } catch (error) {
