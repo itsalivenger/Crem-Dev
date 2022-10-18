@@ -1,5 +1,5 @@
 const currentPlanHTML = document.getElementById('currentPlan');
-const plans = document.querySelectorAll('.plans');
+const plans = document.querySelectorAll('.plansMob');
 let currentPlan = 2;
 
 function paginatePlans(param) {

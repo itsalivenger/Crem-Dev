@@ -70,6 +70,10 @@
           <div class="linksInNav" href="#">About us</div>
         </a>
 
+        <a class="linksContainers" onclick="scrollToContent('ourPlans')">
+          <div class="linksInNav" href="#">Our Plans</div>
+        </a>
+
         <a class="linksContainers" onclick="scrollToContent('contact')">
           <div class="linksInNav" href="#">Contact us</div>
         </a>
@@ -111,6 +115,10 @@
   
           <a class="linksContainers" onclick="scrollToContent('about')">
             <div style='color: #101820FF' class="linksInNav" href="#">About us</div>
+          </a>
+
+          <a class="linksContainers" onclick="scrollToContent('ourPlans')">
+            <div style='color: #101820FF' class="linksInNav" href="#">Our Plans</div>
           </a>
   
           <a class="linksContainers" onclick="scrollToContent('contact')">
@@ -325,12 +333,12 @@
       </div>
 
       <div class="textContainer">
-          <div style="top: 50%; right: 0" class="shapes star-five"></div>
-          <div style="left: 0" class="shapes heart"></div>
-          <div style="right: 0" class="shapes infinity"></div>
-          <div style="bottom: 20%; left: 45%" class="shapes talkbubble"></div>
-          <div style="left: 0; top: 50%" class="shapes badge-ribbon"></div>
-          <div style="right: 40%" class="shapes lock"></div>
+          <div class="shapes star-five"></div>
+          <div class="shapes heart"></div>
+          <div class="shapes infinity"></div>
+          <div class="shapes talkbubble"></div>
+          <div class="shapes badge-ribbon"></div>
+          <div class="shapes lock"></div>
         <div class="textContents">
           <h2>Some kind of Title and explanation</h2>
           <p>
@@ -450,7 +458,7 @@
       </div>
     </section> -->
 
-    <section class="sixthSection">
+    <section id="ourPlans" class="sixthSection">
       <div class="titles">
         <hr />
         <h2 class="ourServicesTitle" style="color: #111">
@@ -468,6 +476,62 @@
           <i class="homeMadeArrows rightArr plansArrows" onclick="paginatePlans(1)"></i>
         </div>
       </div>
+      <div class="plansContainerMob">
+        <div class="plansMob">
+          <div class="planTitle">Minimal Plan</div>
+          
+          <div class="plansList">
+            <div><i class="fa fa-check checked"></i> Task definition</div>
+            <div><i class="fa fa-check checked"></i> Concept creation</div>
+            <div><i class="fa fa-check"></i> Design developpement</div>
+            <div><i class="fa fa-check"></i> Adaptive layout</div>
+            <div><i class="fa fa-check"></i> Lunch of project</div>
+            <div><i class="fa fa-check"></i> Advertising campaign</div>
+          </div>
+
+          <div class="Price">$</div>
+          <div>
+            <button class="btn submitBtn btnInPlans">Order Now</button>
+          </div>
+        </div>
+        
+        <div class="plansMob">
+          <div class="planTitle">Start Plan</div>
+          
+          <div class="plansList">
+            <div><i class="fa fa-check checked"></i> Task definition</div>
+            <div><i class="fa fa-check checked"></i> Concept creation</div>
+            <div><i class="fa fa-check checked"></i> Design developpement</div>
+            <div><i class="fa fa-check checked"></i> Adaptive layout</div>
+            <div><i class="fa fa-check"></i> Lunch of project</div>
+            <div><i class="fa fa-check"></i> Advertising campaign</div>
+          </div>
+
+          <div class="Price">$$</div>
+          <div>
+            <button class="btn submitBtn btnInPlans">Order Now</button>
+          </div>
+        </div>
+        
+        <div class="plansMob">
+          <div class="planTitle">Pro Plan</div>
+          
+          <div class="plansList">
+            <div><i class="fa fa-check checked"></i> Task definition</div>
+            <div><i class="fa fa-check checked"></i> Concept creation</div>
+            <div><i class="fa fa-check checked"></i> Design developpement</div>
+            <div><i class="fa fa-check checked"></i> Adaptive layout</div>
+            <div><i class="fa fa-check checked"></i> Lunch of project</div>
+            <div><i class="fa fa-check checked"></i> Advertising campaign</div>
+          </div>
+
+          <div class="Price">$$$</div>
+          <div>
+            <button class="btn submitBtn btnInPlans">Order Now</button>
+          </div>
+        </div>
+      </div>
+
       <div class="plansContainer">
         <div class="plans">
           <div class="planTitle">Minimal Plan</div>
@@ -616,8 +680,10 @@
             <h5 class="text-uppercase mb-4 pb-1">Newsletter subscription :</h5>
     
             <form class="form-outline form-white mb-4 newsletterForm">
-              <input type="email" id="emailNewsLetter" class="form-control form-control-lg" />
-              <label class="form-label" for="formControlLg">Your Email</label>
+              <div class="form-group">
+                <input class="mailsInfos" type="text" required/>
+                <label for="name">Newsletter</label>
+              </div>
               <button class="btn submitBtn" type="submit">Submit</button>
             </form>
     

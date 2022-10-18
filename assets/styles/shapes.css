@@ -54,6 +54,8 @@
     border-bottom: 70px solid #F2AA4CFF;
     border-left: 100px solid transparent;
     transform: rotate(35deg);
+    top: 50%; 
+    right: 0
 }
 .star-five:before {
     border-bottom: 80px solid #F2AA4CFF;
@@ -107,6 +109,7 @@
     position: absolute;
     width: 100px;
     height: 90px;
+    left: 0
 }
 .heart:before,
 .heart:after {
@@ -132,6 +135,7 @@
     width: 212px;
     height: 100px;
     box-sizing: content-box;
+    right: 0
     }
     .infinity:before,
     .infinity:after {
@@ -183,6 +187,7 @@
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
     border-radius: 10px;
+    bottom: 20%; left: 45%
 }
 .talkbubble:before {
     content: "";
@@ -203,6 +208,8 @@
     height: 100px;
     width: 100px;
     border-radius: 50px;
+    left: 0;
+    top: 50%;
 }
 .badge-ribbon:before,
 .badge-ribbon:after {
@@ -251,6 +258,7 @@
     height: 13em;
     border-radius: 2em;
     top: 10em;
+    right: 40%;
     box-sizing: border-box;
     border: 3.5em solid #F2AA4CFF;
     border-right-width: 7.5em;
@@ -280,4 +288,25 @@
     left: 50%;
     top: -1em;
     margin-left: -2.5em;
+}
+
+@media only screen and (max-width: 580px){
+    .star-five{
+        top: 0;
+        right: -4em;
+    }
+
+    .heart{
+        top: 30%;
+    }
+
+    .badge-ribbon{
+        left: -2%;
+        top: 72%;
+    }
+
+    .talkbubble{
+        bottom: 1em;
+        right: 0;
+    }
 }
