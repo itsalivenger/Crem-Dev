@@ -1,13 +1,16 @@
 const requestUrl = 'https://cremdev.herokuapp.com/';
-const contactForm = document.getElementById('contactForm');
+const forms = document.querySelectorAll('form');
 const modalBox = document.getElementById('myModal');
 const contactSubmitBtn = document.getElementById('contactSubmitBtn');
 const iconInModal = document.querySelector('.iconInModal');
 
-contactForm.addEventListener('submit', (e)=>{
-    e.preventDefault();
-    submitMail();
-});
+// form submission event listener
+for (let i = 0; i < forms.length; i++) {
+    forms[i].addEventListener('submit', (e)=>{
+        e.preventDefault();
+        submitMail(i ? 'newsletter' : 'contactForm', 'POST');
+    })    
+}
 
 
 function sent() {
@@ -18,24 +21,34 @@ function sent() {
     }, 1500);
 }
 
-async function submitMail() {
-    contactSubmitBtn.disabled = true;
-    const [ name, email, subject, message ] = document.querySelectorAll('.mailsInfos');
+async function submitMail(purpose, method) {
+    // disable buttons after one submission
+    handleBtnState(false);
+
     
+    let requestParams = {method};
+    if(purpose === 'contactForm'){
+        var [ name, email, subject, message ] = document.querySelectorAll('.mailsInfos');
+        requestParams.body = JSON.stringify({
+            name: name.value,
+            email: email.value,
+            subject: subject.value,
+            message: message.value
+        })
+    }else if(purpose === 'newsletter'){
+        var email = document.getElementById('emailNewsLetter');
+        requestParams.body = JSON.stringify({email})
+    }
+    
+    if(method == 'POST'){
+        requestParams.credentials = 'include',
+        requestParams.headers = {
+            'Content-type': 'application/json'
+        }
+    }
+
     try {
-        let req = await fetch(requestUrl, {
-            method: 'POST',
-            body: JSON.stringify({
-                name: name.value,
-                email: email.value,
-                subject: subject.value,
-                message: message.value
-            }),
-            credentials: 'include',
-            headers: {
-                'Content-type': 'application/json'
-            }
-        });
+        let req = await fetch(requestUrl, requestParams);
         let res = await req.json();
         if(name == 'houbek'){
             modalBoxText('Chokraaaaaaan houbiiii; love you anaaaa o bizbizzzzzzzzz je reponds ana :3.', 'success')
@@ -47,16 +60,17 @@ async function submitMail() {
         modalBoxText('There was an error submiting the email, please try again later.', 'err');
     }
 
-    modalBox.style.display = 'flex';
-    modalBox.style.opacity = '1';
-    clearForm( name, email, subject, message );
-    contactSubmitBtn.disabled = false;
+    // display of the modal box after the submission
+    handleModalBoxDisplay('show');
+    // clearing the form
+    clearForms();
+
+    
+    //make buttons enabled again
+    handleBtnState(true);
 
     // timer to hide the modal box after a moment of popping
-    setTimeout(() => {
-        modalBox.style.display = 'none';
-        modalBox.style.opacity = '0';
-    }, 3000);
+    setTimeout(() => {handleModalBoxDisplay('nothing')}, 3000);
 }
 
 
@@ -68,9 +82,26 @@ function modalBoxText(text, status) {
     iconInModal.parentElement.style.background = status == 'err' ? '#dc3545'/*red color*/ : '#0dcaf0'/*blue color*/;
 }
 
-function clearForm( name, email, subject, message ) {
-    name.value = '';
-    email.value = '';
-    subject.value = '';
-    message.value = '';
+function clearForms() {
+    let inputs = document.querySelectorAll('input');
+    let textareas = document.querySelectorAll('textarea');
+
+    for (let i = 0; i < inputs.length; i++) {
+        inputs[i].value = '';
+        if(i < textareas.length){
+            textareas[i].value = '';
+        }
+    }
+}
+
+function handleModalBoxDisplay(display) {
+    modalBox.style.display = display == 'show' ? 'flex' : 'none';
+    modalBox.style.opacity = display == 'show' ? '1' : '0';
+}
+
+
+function handleBtnState(state) {
+    for (let i = 0; i < submitBtns.length; i++) {
+        subtmitBtns[i].disabled = state;
+    }
 }

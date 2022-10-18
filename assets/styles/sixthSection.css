@@ -1,9 +1,81 @@
-.sixthSection{
-    margin-top: 2em;
+ .sixthSection{
+    margin: 2em 0;
     gap: 3em;
     text-align: center;
 }
 
+.plansContainer{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.plans{
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    background-color: #101820FF;
+    color: #F9F9F9;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.plansList{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: baseline;
+}
+
+.btnInPlans{
+    width: 100% !important;
+}
+
+.planTitle{
+    font-size: 1.7em;
+}
+
+.plans:nth-child(1), .plans:nth-child(3){
+    transform: scale(.9);
+}
+
+.arrowsPlansContainer{
+    
+}
+
+.checked{
+    color: #F2AA4CFF;
+}
+
+@media only screen and (max-width: 1024px){
+    .plans{
+        width: 33%;
+        padding: 2em;
+        gap: 1em;
+    }
+}
+
+@media only screen and (max-width: 950px){
+    .plansContainer{
+        width: 1000px;
+        overflow: hidden;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 .textInSixthSection{
     width: 50%;
     text-align: center;
@@ -71,4 +143,4 @@
         border: none;
         border-top: 1px solid black;
     }
-}
+} */
