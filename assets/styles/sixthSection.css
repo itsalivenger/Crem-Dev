@@ -19,6 +19,7 @@
     color: #F9F9F9;
     border-radius: 10px;
     width: 30%;
+    transition: translate .4s, transform .4s;
 }
 
 .plansList{
@@ -41,7 +42,15 @@
 }
 
 .arrowsPlansContainer{
-    
+    display: none;
+    width: 20%;
+    justify-content: space-evenly;
+}
+
+.plansCounter{
+    font-size: 2em;
+    position: relative;
+    top: -10px;
 }
 
 .checked{
@@ -61,8 +70,17 @@
         width: 1000px;
         overflow: hidden;
     }
+    
+    .arrowsPlansContainer{
+        display: flex;
+    }
 }
 
+@media only screen and (max-width: 640px){
+    .arrowsPlansContainer{
+        width: 100%;
+    }
+}
 
 
 

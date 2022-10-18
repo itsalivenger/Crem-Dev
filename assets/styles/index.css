@@ -62,7 +62,42 @@ section{
     color: white!important;
 }
 
+.homeMadeArrows {
+    border: solid #101820FF;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px;
+    transition: transform .3s;
+}
+  
+.rightArr {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
 
+.rightArr:hover{
+    transform: scale(1.4) rotate(-45deg);
+}
+
+.rightArr:active{
+    transform: scale(1.2) rotate(-45deg);
+}
+
+
+
+.leftArr {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.leftArr:hover{
+    transform: scale(1.4) rotate(135deg);
+}
+
+.leftArr:active{
+    transform: scale(1.2) rotate(135deg);
+}
 @media only screen and (max-width: 550px) {
     .titles > hr{
         width: 20%;

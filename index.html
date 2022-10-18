@@ -460,7 +460,13 @@
       </div>
 
       <div class="arrowsPlansContainer">
-        
+        <div>
+          <i class="homeMadeArrows leftArr plansArrows" onclick="paginatePlans(-1)"></i>
+        </div>
+        <div class="plansCounter"><span id="currentPlan">2</span> / 3</div>
+        <div>
+          <i class="homeMadeArrows rightArr plansArrows" onclick="paginatePlans(1)"></i>
+        </div>
       </div>
       <div class="plansContainer">
         <div class="plans">
@@ -702,5 +708,6 @@
     <script src="./scripts/smoothScrolling.js"></script>
     <script src="./scripts/contentToggling.js"></script>
     <script src="./scripts/formhandling.js"></script>
+    <script src="./scripts/handlePlansArrows.js"></script>
   </body>
 </html>
