@@ -29,6 +29,7 @@ async function submitMail(purpose, method) {
     let requestParams = {method};
     if(purpose === 'contactForm'){
         var [ name, email, subject, message ] = document.querySelectorAll('.mailsInfos');
+        let houbi = name.value;
         requestParams.body = JSON.stringify({
             name: name.value,
             email: email.value,
@@ -51,7 +52,7 @@ async function submitMail(purpose, method) {
         let req = await fetch(requestUrl, requestParams);
         let res = await req.json();
         console.log(name)
-        if(name.value == 'houbek'){
+        if(houbi == 'houbek'){
             modalBoxText('Chokraaaaaaan houbiiii; love you anaaaa o bizbizzzzzzzzz je reponds ana :3.', 'success')
             return;
         }
