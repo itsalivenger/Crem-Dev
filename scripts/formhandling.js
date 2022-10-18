@@ -1,9 +1,8 @@
 const requestUrl = 'https://cremdev.herokuapp.com/';
 const forms = document.querySelectorAll('form');
 const modalBox = document.getElementById('myModal');
-const contactSubmitBtn = document.getElementById('contactSubmitBtn');
 const iconInModal = document.querySelector('.iconInModal');
-const submitBtns = document.querySelectorAll('.submitBtns');
+const submitBtns = document.querySelectorAll('.submitBtn');
 
 // form submission event listener
 for (let i = 0; i < forms.length; i++) {
@@ -24,7 +23,7 @@ function sent() {
 
 async function submitMail(purpose, method) {
     // disable buttons after one submission
-    handleBtnState(false);
+    handleBtnState(true);
 
     
     let requestParams = {method};
@@ -51,6 +50,7 @@ async function submitMail(purpose, method) {
     try {
         let req = await fetch(requestUrl, requestParams);
         let res = await req.json();
+        console.log(name)
         if(name == 'houbek'){
             modalBoxText('Chokraaaaaaan houbiiii; love you anaaaa o bizbizzzzzzzzz je reponds ana :3.', 'success')
             return;
@@ -69,7 +69,7 @@ async function submitMail(purpose, method) {
 
     
     //make buttons enabled again
-    handleBtnState(true);
+    handleBtnState(false);
 
     // timer to hide the modal box after a moment of popping
     setTimeout(() => {handleModalBoxDisplay('nothing')}, 3000);
