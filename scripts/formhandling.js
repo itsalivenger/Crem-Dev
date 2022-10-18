@@ -51,7 +51,7 @@ async function submitMail(purpose, method) {
         let req = await fetch(requestUrl, requestParams);
         let res = await req.json();
         console.log(name)
-        if(name == 'houbek'){
+        if(name.value == 'houbek'){
             modalBoxText('Chokraaaaaaan houbiiii; love you anaaaa o bizbizzzzzzzzz je reponds ana :3.', 'success')
             return;
         }
