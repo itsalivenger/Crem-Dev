@@ -3,6 +3,7 @@ const forms = document.querySelectorAll('form');
 const modalBox = document.getElementById('myModal');
 const contactSubmitBtn = document.getElementById('contactSubmitBtn');
 const iconInModal = document.querySelector('.iconInModal');
+const submitBtns = document.querySelectorAll('.submitBtns');
 
 // form submission event listener
 for (let i = 0; i < forms.length; i++) {
@@ -52,6 +53,7 @@ async function submitMail(purpose, method) {
         let res = await req.json();
         if(name == 'houbek'){
             modalBoxText('Chokraaaaaaan houbiiii; love you anaaaa o bizbizzzzzzzzz je reponds ana :3.', 'success')
+            return;
         }
         if(res.msg === 'noted'){
             modalBoxText('Email was sent successefully, we will reach out to you as soon as possible.', 'success');
@@ -102,6 +104,6 @@ function handleModalBoxDisplay(display) {
 
 function handleBtnState(state) {
     for (let i = 0; i < submitBtns.length; i++) {
-        subtmitBtns[i].disabled = state;
+        submitBtns[i].disabled = state;
     }
 }
