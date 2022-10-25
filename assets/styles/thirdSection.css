@@ -23,7 +23,7 @@
     width: 25%;
     border-radius: 20px;
     border: 1px solid white;
-    padding: 1em 1em .5em 1em;
+    padding: 0 .5em;
     text-align: center;
     overflow: hidden;
     position: relative;
@@ -55,7 +55,7 @@
 .serviceContentTextUntoggled{
     opacity: 0;
     transition: opacity 1.5s;
-    padding: .2em;
+    padding: .5em;
     border-radius: 20px;
 }
 
