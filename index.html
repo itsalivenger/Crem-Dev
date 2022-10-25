@@ -78,13 +78,6 @@
           <div class="linksInNav" href="#">Contact us</div>
         </a>
       </div>
-      <div class="lightSwitch">
-        <!-- Rounded switch -->
-        <label class="switch">
-          <input type="checkbox" />
-          <span class="slider round"></span>
-        </label>
-      </div>
 
       <div onclick="toggle()" class="button-container">
         <span class="mask">
@@ -101,29 +94,39 @@
 
       <div class="toggle-Menu">
         <button onclick="toggle()" class="closeBtn btn-close"></button>
-          <a class="linksContainers" onclick="scrollToContent('home')">
-            <div style='color: #101820FF' class="linksInNav" href="#">Home</div>
-          </a>
-  
-          <a class="linksContainers" onclick="scrollToContent('services')">
-            <div style='color: #101820FF' class="linksInNav" href="#">Services</div>
-          </a>
-  
-          <a class="linksContainers" onclick="scrollToContent('ourWork')">
-            <div style='color: #101820FF' class="linksInNav" href="#">Our Work</div>
-          </a>
-  
-          <a class="linksContainers" onclick="scrollToContent('about')">
-            <div style='color: #101820FF' class="linksInNav" href="#">About us</div>
-          </a>
+        <a class="linksContainers" onclick="scrollToContent('home')">
+          <div style="color: #101820ff" class="linksInNav" href="#">Home</div>
+        </a>
 
-          <a class="linksContainers" onclick="scrollToContent('ourPlans')">
-            <div style='color: #101820FF' class="linksInNav" href="#">Our Plans</div>
-          </a>
-  
-          <a class="linksContainers" onclick="scrollToContent('contact')">
-            <div style='color: #101820FF' class="linksInNav" href="#">Contact us</div>
-          </a>
+        <a class="linksContainers" onclick="scrollToContent('services')">
+          <div style="color: #101820ff" class="linksInNav" href="#">
+            Services
+          </div>
+        </a>
+
+        <a class="linksContainers" onclick="scrollToContent('ourWork')">
+          <div style="color: #101820ff" class="linksInNav" href="#">
+            Our Work
+          </div>
+        </a>
+
+        <a class="linksContainers" onclick="scrollToContent('about')">
+          <div style="color: #101820ff" class="linksInNav" href="#">
+            About us
+          </div>
+        </a>
+
+        <a class="linksContainers" onclick="scrollToContent('ourPlans')">
+          <div style="color: #101820ff" class="linksInNav" href="#">
+            Our Plans
+          </div>
+        </a>
+
+        <a class="linksContainers" onclick="scrollToContent('contact')">
+          <div style="color: #101820ff" class="linksInNav" href="#">
+            Contact us
+          </div>
+        </a>
       </div>
     </nav>
 
@@ -155,17 +158,17 @@
           <h3 class="numberOfAttr">0</h3>
           <p class="numberDesc">Projects done</p>
         </div>
-        <div class="statistics  sections">
+        <div class="statistics sections">
           <i class="iconsInWhatWeDo fa fa-hourglass"></i>
           <h3 class="numberOfAttr">0</h3>
           <p class="numberDesc">working hours</p>
         </div>
-        <div class="statistics  sections">
+        <div class="statistics sections">
           <i class="iconsInWhatWeDo fa fa-cloud-download"></i>
           <h3 class="numberOfAttr">0</h3>
           <p class="numberDesc">Specialists</p>
         </div>
-        <div class="statistics  sections">
+        <div class="statistics sections">
           <i class="iconsInWhatWeDo fa fa-user"></i>
           <h3 class="numberOfAttr">0</h3>
           <p class="numberDesc">Satisfied Customers</p>
@@ -333,29 +336,24 @@
       </div>
 
       <div class="textContainer">
-          <div class="shapes star-five"></div>
-          <div class="shapes heart"></div>
-          <div class="shapes infinity"></div>
-          <div class="shapes talkbubble"></div>
-          <div class="shapes badge-ribbon"></div>
-          <div class="shapes lock"></div>
+        <div class="shapes star-five"></div>
+        <div class="shapes heart"></div>
+        <div class="shapes infinity"></div>
+        <div class="shapes talkbubble"></div>
+        <div class="shapes badge-ribbon"></div>
+        <div class="shapes lock"></div>
         <div class="textContents">
-          <h2>Some kind of Title and explanation</h2>
+          <h2>what we do</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-            facilis vitae ad nulla doloribus voluptas aperiam quae provident
-            maxime iste quis, praesentium molestiae saepe necessitatibus qui
-            aspernatur earum adipisci laborum.
+            We Crem Dev are a specially-trained team that makes programs, websitesn, chrome extensions 
           </p>
         </div>
 
         <div class="textContents">
           <h2>Some kind of Title and explanation</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-            facilis vitae ad nulla doloribus voluptas aperiam quae provident
-            maxime iste quis, praesentium molestiae saepe necessitatibus qui
-            aspernatur earum adipisci laborum.
+            specialized in ecommerce websites, marketing,
+            advertising sites or even programming sites for programmers
           </p>
         </div>
 
@@ -380,6 +378,10 @@
         </div>
       </div>
     </section>
+
+    <!-- <section id="techStack" class="">
+
+    </section> -->
 
     <!-- <section id="testimonials" class="sixthSection">
       <div class="titles">
@@ -461,25 +463,29 @@
     <section id="ourPlans" class="sixthSection">
       <div class="titles">
         <hr />
-        <h2 class="ourServicesTitle" style="color: #111">
-          Our Plans
-        </h2>
+        <h2 class="ourServicesTitle" style="color: #111">Our Plans</h2>
         <hr />
       </div>
 
       <div class="arrowsPlansContainer">
         <div>
-          <i class="homeMadeArrows leftArr plansArrows" onclick="paginatePlans(-1)"></i>
+          <i
+            class="homeMadeArrows leftArr plansArrows"
+            onclick="paginatePlans(-1)"
+          ></i>
         </div>
         <div class="plansCounter"><span id="currentPlan">2</span> / 3</div>
         <div>
-          <i class="homeMadeArrows rightArr plansArrows" onclick="paginatePlans(1)"></i>
+          <i
+            class="homeMadeArrows rightArr plansArrows"
+            onclick="paginatePlans(1)"
+          ></i>
         </div>
       </div>
       <div class="plansContainerMob">
         <div class="plansMob">
           <div class="planTitle">Minimal Plan</div>
-          
+
           <div class="plansList">
             <div><i class="fa fa-check checked"></i> Task definition</div>
             <div><i class="fa fa-check checked"></i> Concept creation</div>
@@ -490,14 +496,11 @@
           </div>
 
           <div class="Price">$</div>
-          <div>
-            <button class="btn submitBtn btnInPlans">Order Now</button>
-          </div>
         </div>
-        
+
         <div class="plansMob">
           <div class="planTitle">Start Plan</div>
-          
+
           <div class="plansList">
             <div><i class="fa fa-check checked"></i> Task definition</div>
             <div><i class="fa fa-check checked"></i> Concept creation</div>
@@ -508,14 +511,11 @@
           </div>
 
           <div class="Price">$$</div>
-          <div>
-            <button class="btn submitBtn btnInPlans">Order Now</button>
-          </div>
         </div>
-        
+
         <div class="plansMob">
           <div class="planTitle">Pro Plan</div>
-          
+
           <div class="plansList">
             <div><i class="fa fa-check checked"></i> Task definition</div>
             <div><i class="fa fa-check checked"></i> Concept creation</div>
@@ -526,16 +526,13 @@
           </div>
 
           <div class="Price">$$$</div>
-          <div>
-            <button class="btn submitBtn btnInPlans">Order Now</button>
-          </div>
         </div>
       </div>
 
       <div class="plansContainer">
         <div class="plans">
           <div class="planTitle">Minimal Plan</div>
-          
+
           <div class="plansList">
             <div><i class="fa fa-check checked"></i> Task definition</div>
             <div><i class="fa fa-check checked"></i> Concept creation</div>
@@ -546,14 +543,11 @@
           </div>
 
           <div class="Price">$</div>
-          <div>
-            <button class="btn submitBtn btnInPlans">Order Now</button>
-          </div>
         </div>
-        
+
         <div class="plans">
           <div class="planTitle">Start Plan</div>
-          
+
           <div class="plansList">
             <div><i class="fa fa-check checked"></i> Task definition</div>
             <div><i class="fa fa-check checked"></i> Concept creation</div>
@@ -564,14 +558,11 @@
           </div>
 
           <div class="Price">$$</div>
-          <div>
-            <button class="btn submitBtn btnInPlans">Order Now</button>
-          </div>
         </div>
-        
+
         <div class="plans">
           <div class="planTitle">Pro Plan</div>
-          
+
           <div class="plansList">
             <div><i class="fa fa-check checked"></i> Task definition</div>
             <div><i class="fa fa-check checked"></i> Concept creation</div>
@@ -582,61 +573,61 @@
           </div>
 
           <div class="Price">$$$</div>
-          <div>
-            <button class="btn submitBtn btnInPlans">Order Now</button>
-          </div>
         </div>
       </div>
     </section>
 
-    <section id='contact' class="seventhSection">
+    <section id="contact" class="seventhSection">
       <div class="titles">
         <hr />
-        <h2 class="ourServicesTitle" style="color: #F9F9F9">
-          Reach Us
-        </h2>
+        <h2 class="ourServicesTitle" style="color: #f9f9f9">Reach Us</h2>
         <hr />
       </div>
 
-    <div class="reachUsContent">
-      <div class="reachUsText">
-        <div>
-          <h2>Have a project? We would love to help</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, quisquam amet placeat quo vel minima facere architecto </p>
-        </div>
-      </div>
-
-      <form class="form" id="contactForm">
-        <div class="nameAndEmail">
-          <div class="form-group">
-            <input class="mailsInfos" type="text" required/>
-            <label for="name">Name</label>
-          </div>
-          
-          <div class="form-group">
-            <input class="mailsInfos" type="email" required/>
-            <label for="name">Email</label>
+      <div class="reachUsContent">
+        <div class="reachUsText">
+          <div>
+            <h2>Have a project? We would love to help</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem,
+              quisquam amet placeat quo vel minima facere architecto
+            </p>
           </div>
         </div>
 
-        <div class="subject">
-          <div class="form-group">
-            <input class="mailsInfos" type="text" required/>
-            <label for="name">Subject Line</label>
-          </div>
-        </div>
-        
-        <div class="message">
-          <div class="form-group">
-            <textarea class="mailsInfos" required></textarea>
-            <label for="name">Subject Line</label>
-          </div>
-        </div>
+        <form class="form" id="contactForm">
+          <div class="nameAndEmail">
+            <div class="form-group">
+              <input class="mailsInfos" type="text" required />
+              <label for="name">Name</label>
+            </div>
 
-        <div class="submitBtnContainer">
-          <button type="submit" id="contactSubmitBtn" class="btn submitBtn">Send Message !</button>
-        </div>
-      </form>
+            <div class="form-group">
+              <input class="mailsInfos" type="email" required />
+              <label for="name">Email</label>
+            </div>
+          </div>
+
+          <div class="subject">
+            <div class="form-group">
+              <input class="mailsInfos" type="text" required />
+              <label for="name">Subject Line</label>
+            </div>
+          </div>
+
+          <div class="message">
+            <div class="form-group">
+              <textarea class="mailsInfos" required></textarea>
+              <label for="name">Subject Line</label>
+            </div>
+          </div>
+
+          <div class="submitBtnContainer">
+            <button type="submit" id="contactSubmitBtn" class="btn submitBtn">
+              Send Message !
+            </button>
+          </div>
+        </form>
       </div>
     </section>
 
@@ -650,64 +641,84 @@
           <!--Grid column-->
           <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
             <h5 class="text-uppercase mb-4">About company</h5>
-    
+
             <p>
-              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-              voluptatum deleniti atque corrupti.
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui
+              blanditiis praesentium voluptatum deleniti atque corrupti.
             </p>
-    
+
             <p>
-              Blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas
-              molestias.
+              Blanditiis praesentium voluptatum deleniti atque corrupti quos
+              dolores et quas molestias.
             </p>
-    
+
             <div class="mt-4">
               <!-- Facebook -->
-              <a type="button" class="iconsInFooter btn btn-floating btn-primary btn-lg"><i class=" fa fa-facebook-f"></i></a>
+              <a
+                type="button"
+                class="iconsInFooter btn btn-floating btn-primary btn-lg"
+                ><i class="fa fa-facebook-f"></i
+              ></a>
               <!-- Dribbble -->
-              <a type="button" class="iconsInFooter btn btn-floating btn-primary btn-lg"><i class=" fa fa-instagram"></i></a>
+              <a
+                type="button"
+                class="iconsInFooter btn btn-floating btn-primary btn-lg"
+                ><i class="fa fa-instagram"></i
+              ></a>
               <!-- Twitter -->
-              <a type="button" class="iconsInFooter btn btn-floating btn-primary btn-lg"><i class=" fa fa-twitter"></i></a>
+              <a
+                type="button"
+                class="iconsInFooter btn btn-floating btn-primary btn-lg"
+                ><i class="fa fa-twitter"></i
+              ></a>
               <!-- Google + -->
-              <a type="button" class="iconsInFooter btn btn-floating btn-primary btn-lg"><i class=" fa fa-google"></i></a>
+              <a
+                type="button"
+                class="iconsInFooter btn btn-floating btn-primary btn-lg"
+                ><i class="fa fa-google"></i
+              ></a>
               <!-- Linkedin -->
             </div>
           </div>
           <!--Grid column-->
-    
+
           <!--Grid column-->
           <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
             <h5 class="text-uppercase mb-4 pb-1">Newsletter subscription :</h5>
-    
+
             <form class="form-outline form-white mb-4 newsletterForm">
               <div class="form-group">
-                <input class="mailsInfos" type="text" required/>
+                <input class="mailsInfos" type="text" required />
                 <label for="name">Newsletter</label>
               </div>
               <button class="btn submitBtn" type="submit">Submit</button>
             </form>
-    
-            <ul class="fa-ul" style="margin-left: 1.65em;">
+
+            <ul class="fa-ul" style="margin-left: 1.65em">
               <li class="mb-3">
-                <span class="fa-li"><i class="fa fa-home"></i></span><span class="ms-2">Marrakech, NY 10012, US</span>
+                <span class="fa-li"><i class="fa fa-home"></i></span
+                ><span class="ms-2">Marrakech, NY 10012, US</span>
               </li>
               <li class="mb-3">
-                <span class="fa-li"><i class="fa fa-envelope"></i></span><span class="ms-2">Crem@CremDev.com</span>
+                <span class="fa-li"><i class="fa fa-envelope"></i></span
+                ><span class="ms-2">Crem@CremDev.com</span>
               </li>
               <li class="mb-3">
-                <span class="fa-li"><i class="fa fa-phone"></i></span><span class="ms-2">+212 644 91 86 81</span>
+                <span class="fa-li"><i class="fa fa-phone"></i></span
+                ><span class="ms-2">+212 644 91 86 81</span>
               </li>
               <li class="mb-3">
-                <span class="fa-li"><i class="fa fa-print"></i></span><span class="ms-2">+ 01 234 567 89</span>
+                <span class="fa-li"><i class="fa fa-print"></i></span
+                ><span class="ms-2">+ 01 234 567 89</span>
               </li>
             </ul>
           </div>
           <!--Grid column-->
-    
+
           <!--Grid column-->
           <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
             <h5 class="text-uppercase mb-4">Opening hours</h5>
-    
+
             <table class="table text-center text-white">
               <tbody class="font-weight-normal">
                 <tr>
@@ -730,9 +741,9 @@
         <!--Grid row-->
       </div>
       <!-- Grid container -->
-    
+
       <!-- Copyright -->
-      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
         © 2021 Copyright:
         <a class="text-white" href="#">CremDev.com</a>
       </div>
@@ -742,32 +753,31 @@
     <div class="scrollToTopArrow">
       <div class="center-con">
         <div class="circulaire">
-            <div id="cta">
-                <span class="arrow primera next "></span>
-                <span class="arrow segunda next "></span>
-            </div>
-        </div>
-      </div>    
-    </div>
-
-    <div>
-
-  <div id="myModal" class="modal fade">
-    <div class="modal-dialog modal-confirm">
-      <div class="modal-content">
-        <div class="modal-header">
-          <div class="icon-box">
-          <i class="iconInModal fa fa-check"></i>
-          </div>
-            <h4 class="modal-title"></h4>
-          </div>
-          <div class="modal-body">
-            <p class="text-center textInModal"></p>
+          <div id="cta">
+            <span class="arrow primera next"></span>
+            <span class="arrow segunda next"></span>
           </div>
         </div>
       </div>
     </div>
-  </div>
+
+    <div>
+      <div id="myModal" class="modal fade">
+        <div class="modal-dialog modal-confirm">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="icon-box">
+                <i class="iconInModal fa fa-check"></i>
+              </div>
+              <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body">
+              <p class="text-center textInModal"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="./scripts/navMenuToggle.js"></script>
     <script src="./scripts/numbersIncrement.js"></script>
