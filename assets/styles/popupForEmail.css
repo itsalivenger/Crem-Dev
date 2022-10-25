@@ -43,7 +43,7 @@
         height: 95px;
         border-radius: 50%;
         z-index: 9;
-        background: #82ce34;
+        background: #F2AA4CFF;
         padding: 15px;
         text-align: center;
         box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
@@ -59,14 +59,14 @@
 .modal-confirm .btn {
         color: #fff;
         border-radius: 4px;
-        background: #82ce34;
+        background: #F2AA4CFF;
         text-decoration: none;
         transition: all 0.4s;
         line-height: normal;
         border: none;
 }
 .modal-confirm .btn:hover, .modal-confirm .btn:focus {
-        background: #6fb32b;
+        background: #F2AA4CFF;
         outline: none;
 }
 .trigger-btn {
