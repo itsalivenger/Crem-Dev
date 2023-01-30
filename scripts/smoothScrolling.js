@@ -27,11 +27,13 @@ hiddenEles.forEach((e)=> observer.observe(e));
 for (let i = 0; i < cards.length; i++) {
   cards[i].addEventListener('mouseover', (e)=>{
     document.getElementById('cloned') ? document.getElementById('cloned').remove() : 0;
-    let clonedContent = e.target.parentElement.cloneNode(true);
+    let clonedContent = e.target.parentElement.className == 'projectCard' 
+    ? e.target.parentElement.cloneNode(true) : e.target.cloneNode(true);
     clonedContent.id = 'cloned';
     document.querySelector('.gallery').appendChild(clonedContent);
     clonedContent.style.gridArea = 'content';
-    clonedContent.style.zIndex = '3';
+    clonedContent.style.overflow = 'hidden';
+    clonedContent.style.height = "auto";
   });
 }
 

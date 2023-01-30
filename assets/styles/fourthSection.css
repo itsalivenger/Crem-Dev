@@ -35,9 +35,7 @@
 .projectCard{
     background-color: #101820FF;
     color: white;
-    display: flex;
-    /* justify-content: center;
-    align-items: center; */
+    height: fit-content;
     transition: all .2s;
     box-shadow: 4px 2px 35px -11px #101820FF;
     animation: showAnimation .5s ease-out;
