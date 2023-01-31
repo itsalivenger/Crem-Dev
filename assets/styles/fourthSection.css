@@ -20,7 +20,7 @@
 .gallery{
     display: grid;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     grid-template-areas:
     'a b c d'
     'l content content e'
@@ -40,6 +40,7 @@
     box-shadow: 4px 2px 35px -11px #101820FF;
     animation: showAnimation .5s ease-out;
     animation-fill-mode: backwards;
+    position: relative;
 }
 
 .projectCard:hover{
@@ -126,6 +127,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 2em;
 }
 
 .discoverBtn{
@@ -144,12 +146,36 @@
 @media (max-width: 770px){
     .fourthSection{
         padding: 1em 0;
-        height: 80vh;
     }
 
     .gallery{
-        gap: .5em;
+        gap: 1em;
         padding: 0;
+    }
+}
+
+@media (max-width: 600px){
+    .galleryContainer{
+        overflow-x: scroll;
+        padding: 1em;
+    }
+
+    .gallery{
+        display: flex;
+        width: 1200%;
+    }
+
+    .projectCard{
+        overflow: hidden;
+    }
+
+    .visitSiteContainer{
+        top: 100%;
+        transition: top .3s;
+    }
+
+    .projectCard:hover .visitSiteContainer{
+        top: 0;
     }
 }
 
@@ -165,7 +191,6 @@
 
     .gallery{
         padding: 0;
-        gap: .2em;
     }
 
     .discoverBtn{
