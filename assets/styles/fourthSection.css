@@ -41,6 +41,7 @@
     animation: showAnimation .5s ease-out;
     animation-fill-mode: backwards;
     position: relative;
+    overflow: hidden;
 }
 
 .projectCard:hover{
@@ -163,15 +164,6 @@
     .gallery{
         display: flex;
         width: 1200%;
-    }
-
-    .projectCard{
-        overflow: hidden;
-    }
-
-    .visitSiteContainer{
-        top: 100%;
-        transition: top .3s;
     }
 
     .projectCard:hover .visitSiteContainer{

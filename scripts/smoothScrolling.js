@@ -26,12 +26,18 @@ hiddenEles.forEach((e)=> observer.observe(e));
 
 for (let i = 0; i < cards.length; i++) {
   cards[i].addEventListener('mouseover', (e)=>{
+    if(document.getElementById("cloned")){
+      if(document.getElementById("cloned").className.includes(i)){
+        return;
+      }
+    }
     document.getElementById('cloned') ? document.getElementById('cloned').remove() : 0;
     let clonedContent = e.target.parentElement.className == 'projectCard' 
     ? e.target.parentElement.cloneNode(true) : e.target.cloneNode(true);
     clonedContent.id = 'cloned';
     document.querySelector('.gallery').appendChild(clonedContent);
     clonedContent.style.gridArea = 'content';
+    clonedContent.className = clonedContent.className + ' ' + i;
     clonedContent.style.overflow = 'hidden';
     clonedContent.style.height = "auto";
   });
