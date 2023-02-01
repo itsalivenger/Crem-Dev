@@ -1,4 +1,4 @@
-const requestUrl = 'https://cremdev.herokuapp.com/';
+const requestUrl = 'https://crem-server.vercel.app/';
 const forms = document.querySelectorAll('form');
 const modalBox = document.getElementById('myModal');
 const iconInModal = document.querySelector('.iconInModal');
