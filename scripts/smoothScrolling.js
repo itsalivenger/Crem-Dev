@@ -25,7 +25,7 @@ hiddenEles.forEach((e)=> observer.observe(e));
 
 
 for (let i = 0; i < cards.length; i++) {
-  cards[i].addEventListener('mouseover', (e)=>{
+  cards[i].addEventListener('click', (e)=>{
     if(document.getElementById("cloned")){
       if(document.getElementById("cloned").className.includes(i)){
         return;

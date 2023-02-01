@@ -34,6 +34,7 @@
 .textUnderTitle{
     width: 70%;
     text-align: center;
+    font-size: larger;
 }
 
 @media only screen and (max-width: 550px) {
@@ -44,5 +45,6 @@
 
     .textUnderTitle{
         width: 100%;
+        font-size: medium;
     }
 }
