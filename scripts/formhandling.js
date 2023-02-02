@@ -54,7 +54,7 @@ async function submitMail(purpose, method) {
         if(name.value == 'houbek'){
             modalBoxText('Chokraaaaaaan houbiiii; love you anaaaa o bizbizzzzzzzzz je reponds ana :3.', 'success')
         }
-        if(res.msg === 'noted' && name.value != "houbek"){
+        if(res.state && name.value != "houbek"){
             modalBoxText('Email was sent successefully, we will reach out to you as soon as possible.', 'success');
         }
     } catch (error) {

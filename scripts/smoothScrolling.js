@@ -38,8 +38,6 @@ for (let i = 0; i < cards.length; i++) {
     document.querySelector('.gallery').appendChild(clonedContent);
     clonedContent.style.gridArea = 'content';
     clonedContent.className = clonedContent.className + ' ' + i;
-    clonedContent.style.overflow = 'hidden';
-    clonedContent.style.height = "auto";
   });
 }
 
