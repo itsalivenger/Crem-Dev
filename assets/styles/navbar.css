@@ -1,6 +1,6 @@
 #navbar{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: #101820FF;
     align-items: center;
     padding: .5em 2em;
@@ -8,6 +8,7 @@
     width: 100%;
     top: 0;
     z-index: 2;
+    gap: 3em;
 }
 
 .liens{
@@ -54,19 +55,6 @@
 
 .linksInNav{
     color: white;
-}
-
-
-#logoText{
-  color: white;
-  margin: 0;
-  font-family: 'Bebas Neue', cursive;
-  font-size: 2em;
-  transition: color .6s;
-}
-
-#logoText:hover{
-  color: #F2AA4CFF;
 }
 
 @media only screen and (max-width: 650px) {
