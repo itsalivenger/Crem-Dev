@@ -35,9 +35,14 @@
   border: solid white .5px;
 }
 
-.box-in-menu-btn{
-  margin: 15% 0;
+.box-in-menu-btn:nth-child(2){
+  margin: 10% 0;
   width: 40px;
+}
+
+.box-in-menu-btn:nth-child(1), .box-in-menu-btn:nth-child(3){
+  margin: 10% 0;
+  width: 25px;
 }
 
 .white{
