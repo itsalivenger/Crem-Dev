@@ -2,14 +2,13 @@
 http://drive.google.com/uc?export=view&id=
 */
 .firstSection{
-    background-image: url('../images/firstBackground.jpg');
-    background-position: center;
-    background-size: cover;
-    justify-content: center;
-    object-fit: cover;
+    background: linear-gradient(#101820FF, #F2AA4CFF);
     padding: 6em;
     color: white;
     height: 100vh;
+    z-index: 1;
+    justify-content: center;
+    margin: 6.2em 0;
 }
 
 .homeContent{
@@ -18,6 +17,8 @@ http://drive.google.com/uc?export=view&id=
     align-items: center;
     justify-content: space-between;
     gap: 2em;
+    position: relative;
+    z-index: 1;
 }
 
 .firstSectionBtn{
@@ -33,6 +34,13 @@ http://drive.google.com/uc?export=view&id=
 
 .firstSectionBtn:hover{
     background-color: rgb(238, 157, 51)!important;
+}
+
+.particlesContainer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
 }
 
 @media only screen and (max-width: 770px){
