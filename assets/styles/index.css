@@ -2,6 +2,11 @@
     F9F9F9 white/ F2AA4CFF yellow / 101820FF black 
 */
 
+
+/* 
+    Font: Opens Sans
+*/
+
 *{
     /* font-family: 'Rubik Dirt', cursive; */
     font-family: 'Open Sans', 'sans-serif';
@@ -52,7 +57,7 @@ section{
     font-size: 20px!important;
     position: absolute;
     top: -10px;
-    background-color: white;
+    background-color: #F9F9F9;
     border-radius: 10px;
     color: #F2AA4CFF;
     padding: 0 1em .5em 1em;
