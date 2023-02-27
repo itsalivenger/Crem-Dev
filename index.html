@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Local CSS  -->
     <link href="./assets/styles/navbar.css" rel="stylesheet" />
     <link href="./assets/styles/index.css" rel="stylesheet" />
     <link href="./assets/styles/switch.css" rel="stylesheet" />
@@ -47,8 +48,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <title>Crem | Road To Ascension</title>
+
+    <!-- AOS Lib -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Website Icon -->
     <link rel="icon" href="./assets/images/Crem.ico" type="image/x-icon" />
+    <title>Crem | Road To Ascension</title>
   </head>
   <body>
     <nav id="navbar">
@@ -193,7 +200,7 @@
       </p>
       <div id="horizontalScroll">
         <div class="whatWeDoContentContainer">
-          <div class="services">
+          <div class="services" data-aos="flip-right">
             <div id="websitesBg" class="backgrounds lazy"></div>
             <div class="serviceContent">
               <div>
@@ -208,7 +215,7 @@
             </div>
           </div>
 
-          <div class="services">
+          <div class="services" data-aos="flip-up">
             <div id="responsiveBg" class="backgrounds lazy"></div>
             <div class="serviceContent">
               <div>
@@ -228,7 +235,7 @@
             </div>
           </div>
 
-          <div class="services">
+          <div class="services" data-aos="flip-right">
             <div id="mobilePhoneBg" class="backgrounds lazy"></div>
             <div class="serviceContent">
               <div>
@@ -242,7 +249,7 @@
             </div>
           </div>
 
-          <div class="services">
+          <div class="services" data-aos="flip-right">
             <div id="webMarketing" class="backgrounds lazy"></div>
             <div class="serviceContent">
               <div>
@@ -257,7 +264,7 @@
             </div>
           </div>
 
-          <div class="services">
+          <div class="services" data-aos="flip-down">
             <div id="maintenance" class="backgrounds lazy"></div>
             <div class="serviceContent">
               <div>
@@ -273,7 +280,7 @@
             </div>
           </div>
 
-          <div class="services">
+          <div class="services" data-aos="flip-right">
             <div id="pricing" class="backgrounds lazy"></div>
             <div class="serviceContent">
               <div>
@@ -876,5 +883,8 @@
     <script src="./scripts/contentToggling.js"></script>
     <script src="./scripts/formhandling.js"></script>
     <script src="./scripts/handlePlansArrows.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
