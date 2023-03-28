@@ -104,7 +104,7 @@
           <div class="box-in-menu-btn white"></div>
           <div class="box-in-menu-btn white"></div>
         </span>
-        <button type="button" name="Hover">
+        <button type="button" aria-label="Toggle Menu" name="Hover">
           <div class="box-in-menu-btn black"></div>
           <div class="box-in-menu-btn black"></div>
           <div class="box-in-menu-btn black"></div>
@@ -112,7 +112,7 @@
       </div>
 
       <div class="toggle-Menu">
-        <button onclick="toggle()" class="closeBtn btn-close"></button>
+        <button onclick="toggle()" aria-label="Close Button" class="closeBtn btn-close"></button>
         <a class="linksContainers" onclick="scrollToContent('home')">
           <div style="color: #101820ff" class="linksInNav" href="#">Home</div>
         </a>
@@ -431,7 +431,8 @@
                 >Visit</a
               >
             </div>
-            <img class="img img-fluid" src="https://i.imgur.com/jRYjCn8.png" />
+            <img class="img img-fluid" alt="aranora website image"
+            src="https://i.imgur.com/jRYjCn8.png" />
           </div>
 
           <!-- MGB -->
@@ -444,7 +445,8 @@
                 >Visit</a
               >
             </div>
-            <img class="img img-fluid" src="https://i.imgur.com/hmTS5Jj.png" />
+            <img class="img img-fluid" alt="MGB website image"
+            src="https://i.imgur.com/hmTS5Jj.png" />
           </div>
 
           <!-- Vegety-->
@@ -457,7 +459,8 @@
                 >Visit</a
               >
             </div>
-            <img class="img img-fluid" src="https://i.imgur.com/Tf3q5hj.jpg" />
+            <img class="img img-fluid" alt="Vegety website image"
+            src="https://i.imgur.com/Tf3q5hj.jpg" />
           </div>
 
           <!-- Chat Gpt -->
@@ -467,55 +470,64 @@
                 >Visit</a
               >
             </div>
-            <img class="img img-fluid" src="https://i.imgur.com/Qb9XUsC.jpg" />
+            <img class="img img-fluid" alt="website image"
+            src="https://i.imgur.com/Qb9XUsC.jpg" />
           </div>
           <div class="imageInGallery">
             <div class="visitSiteContainer">
               <a href="#" target="_blank" class="btn discoverBtn">Visit</a>
             </div>
-            <img class="img img-fluid" src="https://i.imgur.com/Tf3q5hj.jpg" />
+            <img class="img img-fluid" alt="website image"
+            src="https://i.imgur.com/Tf3q5hj.jpg" />
           </div>
           <div class="imageInGallery">
             <div class="visitSiteContainer">
               <a href="#" target="_blank" class="btn discoverBtn">Visit</a>
             </div>
-            <img class="img img-fluid" src="https://i.imgur.com/Tf3q5hj.jpg" />
+            <img class="img img-fluid" alt="website image"
+            src="https://i.imgur.com/Tf3q5hj.jpg" />
           </div>
           <div class="imageInGallery">
             <div class="visitSiteContainer">
               <a href="#" target="_blank" class="btn discoverBtn">Visit</a>
             </div>
-            <img class="img img-fluid" src="https://i.imgur.com/Tf3q5hj.jpg" />
+            <img class="img img-fluid" alt="website image"
+            src="https://i.imgur.com/Tf3q5hj.jpg" />
           </div>
           <div class="imageInGallery">
             <div class="visitSiteContainer">
               <a href="#" target="_blank" class="btn discoverBtn">Visit</a>
             </div>
-            <img class="img img-fluid" src="https://i.imgur.com/Tf3q5hj.jpg" />
+            <img class="img img-fluid" alt="website image"
+            src="https://i.imgur.com/Tf3q5hj.jpg" />
           </div>
           <div class="imageInGallery">
             <div class="visitSiteContainer">
               <a href="#" target="_blank" class="btn discoverBtn">Visit</a>
             </div>
-            <img class="img img-fluid" src="https://i.imgur.com/Tf3q5hj.jpg" />
+            <img class="img img-fluid" alt="website image"
+            src="https://i.imgur.com/Tf3q5hj.jpg" />
           </div>
           <div class="imageInGallery">
             <div class="visitSiteContainer">
               <a href="#" target="_blank" class="btn discoverBtn">Visit</a>
             </div>
-            <img class="img img-fluid" src="https://i.imgur.com/Tf3q5hj.jpg" />
+            <img class="img img-fluid" alt="website image"
+            src="https://i.imgur.com/Tf3q5hj.jpg" />
           </div>
           <div class="imageInGallery">
             <div class="visitSiteContainer">
               <a href="#" target="_blank" class="btn discoverBtn">Visit</a>
             </div>
-            <img class="img img-fluid" src="https://i.imgur.com/Tf3q5hj.jpg" />
+            <img class="img img-fluid" alt="website image"
+            src="https://i.imgur.com/Tf3q5hj.jpg" />
           </div>
           <div class="imageInGallery">
             <div class="visitSiteContainer">
               <a href="#" target="_blank" class="btn discoverBtn">Visit</a>
             </div>
-            <img class="img img-fluid" src="https://i.imgur.com/Tf3q5hj.jpg" />
+            <img class="img img-fluid" alt="website image"
+            src="https://i.imgur.com/Tf3q5hj.jpg" />
           </div>
         </div>
       </div>
@@ -803,32 +815,33 @@
         <form class="form" id="contactForm">
           <div class="nameAndEmail">
             <div class="form-group">
-              <input class="mailsInfos" type="text" required />
+              <input aria-label="Name" class="mailsInfos" type="text" required />
               <label for="name">Name</label>
             </div>
 
             <div class="form-group">
-              <input class="mailsInfos" type="email" required />
+              <input aria-label="Email" class="mailsInfos" type="email" required />
               <label for="name">Email</label>
             </div>
           </div>
 
           <div class="subject">
             <div class="form-group">
-              <input class="mailsInfos" type="text" required />
-              <label for="name">Subject Line</label>
+              <input aria-label="Subject Title" class="mailsInfos" type="text" required />
+              <label for="name">Subject Title</label>
             </div>
           </div>
 
           <div class="message">
             <div class="form-group">
-              <textarea class="mailsInfos" required></textarea>
+              <textarea aria-label="Subject Line" class="mailsInfos" required></textarea>
               <label for="name">Subject Line</label>
             </div>
           </div>
 
           <div class="submitBtnContainer">
-            <button type="submit" id="contactSubmitBtn" class="btn submitBtn">
+            <button type="submit" aria-label="submit contact message"
+            id="contactSubmitBtn" class="btn submitBtn">
               Send Message !
             </button>
           </div>
