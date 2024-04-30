@@ -55,9 +55,10 @@ async function submitMail(purpose, method) {
         console.log(res)
         if(name.value == 'houbek'){
             modalBoxText('Chokraaaaaaan houbiiii; love you anaaaa o bizbizzzzzzzzz je reponds ana :3.', 'success')
-        }
-        if(name.value != "houbek"){
+        }else if(res.state){
             modalBoxText('Email was sent successefully, we will reach out to you as soon as possible.', 'success');
+        }else{
+            modalBoxText('There was an error submiting the email, please try again later.', 'err');
         }
     } catch (error) {
         modalBoxText('There was an error submiting the email, please try again later.', 'err');
