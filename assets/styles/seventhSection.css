@@ -1,0 +1,88 @@
+.seventhSection{
+    display: flex;
+    flex-direction: column;
+    background-color: #101820FF;
+    color: #F9F9F9;
+    padding: 3em .5em;
+}
+
+.reachUsContent{
+    display: flex;
+    flex-direction: row;
+}
+
+.reachUsText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.reachUsText > div{
+    width: 50%;
+    height: 100%;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.reachUsContent > *{
+    width: 50%;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+
+.nameAndEmail{
+    display: flex;
+    gap: 1em;
+}
+
+.subject{
+    width: 100%;
+}
+
+.submitBtnContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.submitBtn{
+    width: 40%;
+    background-color: #F2AA4CFF !important;
+}
+
+@media (max-width: 450px) {
+    .seventhSection{
+        margin-top: 2em;
+        padding-top: 2em;
+    }
+
+    .reachUsContent{
+        flex-direction: column;
+    }
+
+    .reachUsContent > *{
+        width: 100%;
+    }
+
+    .reachUsText > div{
+        width: 100%;
+        padding: 1em;
+        gap: 1em;
+        text-align: center;
+    }
+
+    .form{
+        padding: .5em;
+    }
+
+    .submitBtn{
+        width: 60%;
+    }
+}

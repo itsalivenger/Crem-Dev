@@ -1,0 +1,312 @@
+.circle {
+    width: 100px;
+    height: 100px;
+    background: #F2AA4CFF;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #F2AA4CFF;
+    position: absolute;
+}
+
+.parallelogram {
+    width: 150px;
+    height: 100px;
+    transform: skew(20deg);
+    background: #F2AA4CFF;
+    position: absolute;
+}
+
+.star-six {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #F2AA4CFF;
+    position: absolute;
+}
+.star-six:after {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid #F2AA4CFF;
+    position: absolute;
+    content: "";
+    top: 30px;
+    left: -50px;
+}
+
+.star-five {
+    margin: 50px 0;
+    position: absolute;
+    display: block;
+    color: #F2AA4CFF;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid #F2AA4CFF;
+    border-left: 100px solid transparent;
+    transform: rotate(35deg);
+    top: 50%; 
+    right: 0
+}
+.star-five:before {
+    border-bottom: 80px solid #F2AA4CFF;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -45px;
+    left: -65px;
+    display: block;
+    content: '';
+    transform: rotate(-35deg);
+}
+.star-five:after {
+    position: absolute;
+    display: block;
+    color: #F2AA4CFF;
+    top: 3px;
+    left: -105px;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid #F2AA4CFF;
+    border-left: 100px solid transparent;
+    transform: rotate(-70deg);
+    content: '';
+}
+
+.pentagon {
+    position: absolute;
+    width: 54px;
+    box-sizing: content-box;
+    border-width: 50px 18px 0;
+    border-style: solid;
+    border-color: #F2AA4CFF transparent;
+}
+.pentagon:before {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -85px;
+    left: -18px;
+    border-width: 0 45px 35px;
+    border-style: solid;
+    border-color: transparent transparent #F2AA4CFF;
+    }
+
+.heart {
+    position: absolute;
+    width: 100px;
+    height: 90px;
+    left: 0
+}
+.heart:before,
+.heart:after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: #F2AA4CFF;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+.heart:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+
+.infinity {
+    position: absolute;
+    width: 212px;
+    height: 100px;
+    box-sizing: content-box;
+    right: 0
+    }
+    .infinity:before,
+    .infinity:after {
+    content: "";
+    box-sizing: content-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    border: 20px solid #F2AA4CFF;
+    border-radius: 50px 50px 0 50px;
+    transform: rotate(-45deg);
+    }
+    .infinity:after {
+    left: auto;
+    right: 0;
+    border-radius: 50px 50px 50px 0;
+    transform: rotate(45deg);
+}
+
+.cut-diamond {
+    border-style: solid;
+    border-color: transparent transparent #F2AA4CFF transparent;
+    border-width: 0 25px 25px 25px;
+    height: 0;
+    width: 50px;
+    box-sizing: content-box;
+    position: absolute;
+    margin: 20px 0 50px 0;
+  }
+  .cut-diamond:after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: -25px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: #F2AA4CFF transparent transparent transparent;
+    border-width: 70px 50px 0 50px;
+}
+
+.talkbubble {
+    width: 120px;
+    height: 80px;
+    background: #F2AA4CFF;
+    position: absolute;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    bottom: 20%; left: 45%
+}
+.talkbubble:before {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 26px;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-right: 26px solid #F2AA4CFF;
+    border-bottom: 13px solid transparent;
+}
+
+
+.badge-ribbon {
+    position: absolute;
+    background: #F2AA4CFF;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    left: 0;
+    top: 50%;
+}
+.badge-ribbon:before,
+.badge-ribbon:after {
+    content: '';
+    position: absolute;
+    border-bottom: 70px solid #F2AA4CFF;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    top: 70px;
+    left: -10px;
+    transform: rotate(-140deg);
+}
+.badge-ribbon:after {
+    left: auto;
+    right: -10px;
+    transform: rotate(140deg);
+}
+
+.magnifying-glass {
+    font-size: 10em;
+    display: inline-block;
+    width: 0.4em;
+    box-sizing: content-box;
+    height: 0.4em;
+    border: 0.1em solid #F2AA4CFF;
+    position: absolute;
+    border-radius: 0.35em;
+}
+.magnifying-glass:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: -0.25em;
+    bottom: -0.1em;
+    border-width: 0;
+    background: #F2AA4CFF;
+    width: 0.35em;
+    height: 0.08em;
+    transform: rotate(45deg);
+}
+
+.lock {
+    font-size: 8px;
+    position: absolute;
+    width: 18em;
+    height: 13em;
+    border-radius: 2em;
+    top: 10em;
+    right: 40%;
+    box-sizing: border-box;
+    border: 3.5em solid #F2AA4CFF;
+    border-right-width: 7.5em;
+    border-left-width: 7.5em;
+}
+.lock:before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: 2.5em solid #F2AA4CFF;
+    width: 14em;
+    height: 12em;
+    left: 50%;
+    margin-left: -7em;
+    top: -12em;
+    border-top-left-radius: 7em;
+    border-top-right-radius: 7em;
+}
+.lock:after {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: 1em solid #F2AA4CFF;
+    width: 5em;
+    height: 8em;
+    border-radius: 2.5em;
+    left: 50%;
+    top: -1em;
+    margin-left: -2.5em;
+}
+
+@media only screen and (max-width: 580px){
+    .star-five{
+        top: 0;
+        right: -4em;
+    }
+
+    .heart{
+        top: 30%;
+    }
+
+    .badge-ribbon{
+        left: -2%;
+        top: 72%;
+    }
+
+    .talkbubble{
+        bottom: 1em;
+        right: 0;
+    }
+}

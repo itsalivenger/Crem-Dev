@@ -1,0 +1,15 @@
+footer{
+    background: linear-gradient(#101820FF, #F2AA4CFF)!important;
+    padding-top: 3em!important;
+}
+
+.iconsInFooter{
+    background-color: #101820FF!important;
+    border-color: #101820FF!important;
+    color: #F9F9F9;
+}
+
+.iconsInFooter:hover{
+    background-color: #F2AA4CFF!important;
+    border-color: white!important;
+}

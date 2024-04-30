@@ -1,0 +1,27 @@
+.toggle-Menu{
+    display: none;
+}
+
+@media only screen and (max-width: 650px) {
+    .toggle-Menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        overflow: hidden;
+        width: 0;
+        height: 100vh;
+        gap: 1em;
+        border: 1px solid black;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #fff;
+        transition: width .4s;
+    }
+    
+    .toggle{
+        width: 100%;
+    }
+    
+}
