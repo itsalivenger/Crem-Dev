@@ -39,7 +39,7 @@ async function submitMail(purpose, method) {
         })
     }else if(purpose === 'newsletter'){
         var emailInput = document.getElementById('emailNewsLetter');
-        requestParams.body = JSON.stringify({email: emailInput.value})
+        requestParams.body = JSON.stringify({email: emailInput.value, subject: "Newsletter Email:"})
     }
     
     if(method == 'POST'){
