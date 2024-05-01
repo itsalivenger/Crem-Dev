@@ -38,8 +38,8 @@ async function submitMail(purpose, method) {
             message: message.value
         })
     }else if(purpose === 'newsletter'){
-        var email = document.getElementById('emailNewsLetter');
-        requestParams.body = JSON.stringify({email: email.value})
+        var emailInput = document.getElementById('emailNewsLetter');
+        requestParams.body = JSON.stringify({email: emailInput.value})
     }
     
     if(method == 'POST'){
