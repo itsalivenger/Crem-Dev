@@ -48,7 +48,7 @@
 }
 
 
-.plans:hover{
+.plans:hover, .plansMob:hover{
     transform: scale(1.2);
 }
 
