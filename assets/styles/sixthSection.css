@@ -49,7 +49,7 @@
 
 
 .plans:hover, .plansMob:hover{
-    transform: scale(1.2)!important;
+    transform: scale(1.05)!important;
 }
 
 .arrowsPlansContainer{
