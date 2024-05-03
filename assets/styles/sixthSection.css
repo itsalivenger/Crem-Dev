@@ -27,9 +27,6 @@
     transition: all .4s ease;
 }
 
-.plans:hover{
-    transform: scale(1.2);
-}
 
 .plansList{
     display: flex;
@@ -48,6 +45,11 @@
 
 .plans:nth-child(1), .plans:nth-child(3), .plansMob:nth-child(1), .plansMob:nth-child(3){
     transform: scale(.9);
+}
+
+
+.plans:hover{
+    transform: scale(1.2);
 }
 
 .arrowsPlansContainer{
