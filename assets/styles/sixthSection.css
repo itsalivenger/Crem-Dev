@@ -24,7 +24,11 @@
     border-radius: 10px;
     width: 30%;
     translate: 0;
-    transition: translate .4s, transform .4s;
+    transition: all .4s ease;
+}
+
+.plans:hover{
+    transform: scale(1.2);
 }
 
 .plansList{
