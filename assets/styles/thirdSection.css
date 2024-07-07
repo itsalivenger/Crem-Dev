@@ -131,7 +131,6 @@
 @media only screen and (max-width: 768px) {
     #horizontalScroll{
         width: 100%;
-        overflow-x: hidden;
     }
 
     .services{
