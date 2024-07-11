@@ -1,4 +1,5 @@
 const requestUrl = 'https://crem-server.vercel.app/';
+// const requestUrl = 'http://localhost:5050/';
 const forms = document.querySelectorAll('form');
 const modalBox = document.getElementById('myModal');
 const iconInModal = document.querySelector('.iconInModal');
@@ -44,7 +45,6 @@ async function submitMail(purpose, method) {
     }
     
     if(method == 'POST'){
-        requestParams.credentials = 'include',
         requestParams.headers = {
             'Content-type': 'application/json'
         }
@@ -54,7 +54,7 @@ async function submitMail(purpose, method) {
         let req = await fetch(requestUrl, requestParams);
         let res = await req.json();
         console.log(res)
-        if(name.value == 'houbek'){
+        if(name == 'houbek'){
             modalBoxText('Chokraaaaaaan houbiiii; love you anaaaa o bizbizzzzzzzzz je reponds ana :3.', 'success')
         }else if(res.state){
             modalBoxText('Email was sent successefully, we will reach out to you as soon as possible.', 'success');
