@@ -1,4 +1,4 @@
-const requestUrl = 'https://crem-server.vercel.app/';
+const requestUrl = 'https://crem-server.vercel.app';
 // const requestUrl = 'http://localhost:5050/';
 const forms = document.querySelectorAll('form');
 const modalBox = document.getElementById('myModal');
@@ -76,7 +76,7 @@ async function submitMail(purpose, method) {
     handleBtnState(false);
 
     // timer to hide the modal box after a moment of popping
-    setTimeout(() => {handleModalBoxDisplay('nothing')}, 3000);
+    setTimeout(() => {handleModalBoxDisplay('nothing')}, 4000);
 }
 
 
